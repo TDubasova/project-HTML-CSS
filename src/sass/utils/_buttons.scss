@@ -1,0 +1,24 @@
+.button {
+    height: 42px;
+    border-radius: 10px;
+}
+
+.button--yellow {
+    width: 152px;
+    background-color: $color-logo;
+    
+}
+
+.button__menu {
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+}
+
+.button__header {
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+
+}
+

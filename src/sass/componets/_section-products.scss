@@ -1,0 +1,40 @@
+.products {
+    // margin: 0 auto;
+    text-align: center;
+    background-color: white;
+    background-image: url('../images/backgroud_mob1x.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media screen and (min-width: 768px) {
+            background-image: url('../images/background_tablet1x.png');
+        }
+    
+    @media screen and (min-width: 1200px) {
+            max-width: 1600px;
+            background-image: url('../images/background_desktop1x.png');
+        }
+}
+
+.products__label {
+    margin-top: 88px;
+    color: #131313;
+}
+
+.products__title {
+    margin-top: 12px;
+    color: #131313;
+}
+
+.products__set {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+    padding: 0;
+    list-style: none;
+}
+
+.products__card {
+    flex-basis: calc((100% - (6 * 30px)) / 3);
+}

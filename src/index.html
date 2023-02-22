@@ -1,259 +1,446 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&family=Seymour+One&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./sass/index.css" />
+  </head>
+  <body>
     <!-- header -->
-    <header>
+    <header class="conteiner header-hero">
+      <div class="header">
+        <!-- logo -->
+        <img class="logo" src="./images/logo@2x.png" alt="company logo Ice" />
+        <!-- Navigation -->
+        <button
+          type="button"
+          class="menu__button"
+          aria-expanded="false"
+          aria-controls="menu-container"
+          data-menu-button
+        >
+          <svg
+            class="menu__icon"
+            width="32"
+            height="32"
+            aria-label="Мобільне меню"
+          >
+            <use
+              class="menu__close"
+              href="./images/icons.svg#icon-close_white"
+            ></use>
+            <use class="menu__open" href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
+        <div class="menu__container" id="menu-container" data-menu>
+          <ul class="navigation">
+            <li class="navigation__item">
+              <a class="header-menu__link" href="#home">Home</a>
+            </li>
+            <li class="navigation__item">
+              <a class="header-menu__link" href="#about">How it's made?</a>
+            </li>
+            <li class="navigation__item">
+              <a class="header-menu__link" href="#products">Our products</a>
+            </li>
+            <li class="navigation__item">
+              <a class="header-menu__link" href="#contacts">Contact</a>
+            </li>
+          </ul>
+          <!-- Modal window -->
+          <button type="button" class="button button--yellow button__menu">
+            Buy now
+            <svg class="button__icon" width="12" height="12">
+              <use href="./images/icons.svg#icon-Vector"></use>
+            </svg>
+          </button>
+        </div>
+        <button type="button" class="button button--yellow button__header">
+          Buy now
+          <svg class="button__icon" width="12" height="12">
+            <use href="./images/icons.svg#icon-Vector"></use>
+          </svg>
+        </button>
+      </div>
 
-        <div>
-            <!-- logo -->
-            <img src="./images/Logo.png" alt="company logo Ice" width="65"/>
-
-            <!-- Navigation -->
-            <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">How it's made?</a></li>
-                <li><a href="#products">Our products</a></li>
-                <li><a href="#contacts">Contact</a></li>
+      <!-- Hero -->
+      <div class="hero">
+        <div class="hero__info">
+          <div class="hero__menu">
+            <h1 class="hero__title">ice cream made with<span class="hero__title hero__title--bold"> passion</span></h1>
+            <ul class="menu__list">
+              <li class="menu__item"><a class="menu__link menu__link--btn" href="#products">Products</a></li>
+              <li class="menu__item"><a class="menu__link" href="#about">How it's made?</a></li>
             </ul>
-            </nav>
-
-            <!-- Modal window -->
-            <button>Buy now<img src="./images/Vector.png" alt="right arrow"/></button>
+          </div>
+          <ul class="info__list">
+            <li class="info__item">
+              <p class="info__txt info__txt--bold">16</p>
+              <p class="info__txt">cafes</p>
+            </li>
+            <li class="info__item">
+              <p class="info__txt info__txt--bold">23</p>
+              <p class="info__txt">food brucks</p>
+            </li>
+          </ul>
         </div>
-    
 
-        <!-- Hero -->
-        <div>
-        <h1>ice cream made with passion</h1>
-        <p><span>16</span>cafes</p>
-        <p><span>23</span>food brucks</p>
-        <button><a href="#products">Products</a></button>
-        <button><a href="#about">How it's made?</a></button>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+        <div class="hero__feature">
+        <p class="feature__text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et
+        </p>
+        <svg class="feature__icon" width="40" height="16">
+            <use href="./images/icons.svg#arrow"></use>
+        </svg>
         </div>
+
+        <img
+          class="hero_img hero__img--points"
+          srcset="
+            ./images/points-320.png      320w,
+            ./images/points-321.png      321w,
+            ./images/points-320@2x.png   620w,
+            ./images/points-321@2x.png   642w,
+            ./images/points-768.png      768w,
+            ./images/points-1200.png    1200w,
+            ./images/points-768@2x.png  1636w,
+            ./images/points-1200@2x.png 2400w
+          "
+          sizes="(min-width: 1200px) 1200px, (min-width: 768px) 768px, (min-width: 480px) 321px, (min-width: 100px) 320px, 100vw"
+          src="./images/points-320.png"
+        />
+
+        <img
+          class="hero__img hero__img--plate"
+          srcset="
+            ./images/plate-152.png    152w,
+            ./images/plate-225.png    225w,
+            ./images/plate-152@2x.png 304w,
+            ./images/plate-225@2x.png 550w
+          "
+          sizes="(min-width: 1200px) 225px, (min-width: 768px) 152px, 100vw"
+          src="./images/plate-152.png"
+        />
+
+        <img
+          class="hero__img hero__img--horn"
+          srcset="
+            ./images/horn-177.png    177w,
+            ./images/horn-218.png    218w,
+            ./images/horn-268.png    268w,
+            ./images/horn-177@2x.png 354w,
+            ./images/horn-218@2x.png 436w,
+            ./images/horn-456.png    456w,
+            ./images/horn-268@2x.png 536w,
+            ./images/horn-456@2x.png 912w
+          "
+          sizes="(min-width: 1200px) 456px, (min-width: 768px) 268px, (min-width: 480px) 218px, (min-width: 100px) 177px, 100vw"
+          src="./images/horn-177.png"
+        />
+      </div>
     </header>
 
     <main>
-    <section>
+      <section id="products" class="conteiner products">
         <!-- Products -->
-        <label>100% natural</label>
-        <h2>products</h2>
+        <label class="products__label">100% natural</label>
+        <h2 class="products__title">products</h2>
 
-        <article>
-            <!-- Зображення на картках товарів є декоративними, їх необхідно реалізувати псевдо-елементами -->
-            <h3>ice cream</h3>
-            <p>Soft ice cream with a delicate taste. Made with milk, cream, sugar and natural stabilizer</p>
-            <btn></btn>
-            <!-- Кнопка зі стрілкою внизу картки повинна відкривати докладний опис продукту (реалізація модального вікна не є обов'язковим завданням). -->
-            <!-- Модальне вікно about prodact -->
-            <!-- <div>
-            <h3>Chololate icecream</h3>
-            <img />
-            <ul>
-                <li>320 kcal</li>
-                <li>4g Protein...</li>
-                <li>8,2g Fats</li>
-                <li>40,4g Carbs</li>
+        <ul class="products__set">
+        <li class="products__card">
+          <!-- Зображення на картках товарів є декоративними, їх необхідно реалізувати псевдо-елементами -->
+          <h3 class="card__title">ice cream</h3>
+          <p class="card__info">
+            Soft ice cream with a delicate taste. Made with milk, cream, sugar
+            and natural stabilizer
+          </p>
+          <button type="button" class="card__button button button--arrow">
+            <svg class="button__icon"></svg>
+          </button>
+          <!-- Кнопка зі стрілкою внизу картки повинна відкривати докладний опис продукту (реалізація модального вікна не є обов'язковим завданням). -->
+          <!-- Модальне вікно about prodact -->
+          <!-- <div class="modal-window product-description">
+            <h3 class="modal-window__title">Chololate icecream</h3>
+            <img class="product-description__img"/>
+            <ul class="product-description__list caloric-content">
+                <li class="caloric-content__item">320 kcal</li>
+                <liclass="caloric-content__item">4g Protein...</li>
+                <li class="caloric-content__item">8,2g Fats</li>
+                <li class="caloric-content__item">40,4g Carbs</li>
             </ul>
-            <h4>Ingredients</h4>
-            <ul>
-                <li>Milk                   100ml</li>
-                <li>Belgian chocolate      20g</li>
-                <li>Cream                  150ml</li>
-                <li>Cocoa powder           30g</li>
-                <li>Sugar                  40g</li>
-                <li>Vanilla sugar          10g</li>
+            <h4 class="product-description__title--ingredients">Ingredients</h4>
+            <ul class="product-description__list ingredients">
+                <li class="ingredients__item">Milk                   100ml</li>
+                <li class="ingredients__item>Belgian chocolate      20g</li>
+                <li class="ingredients__item>Cream                  150ml</li>
+                <li class="ingredients__item>Cocoa powder           30g</li>
+                <li class="ingredients__item>Sugar                  40g</li>
+                <li class="ingredients__item>Vanilla sugar          10g</li>
             </ul>
-            <form>
-                <input type="text" placeholder="Name">
-                <input type="tel" placeholder="Phone">
-                <textarea type="text" placeholder="Comment"></textarea>
-                <button type="submit">Submit</button>
+            <form class="form form--order">
+                <input class="form__input" type="text" placeholder="Name">
+                <input class="form__input" type="tel" placeholder="Phone">
+                <textarea class="form__textarea" type="text" placeholder="Comment"></textarea>
+                <button class="form__button" type="submit">Submit</button>
             </form>
             </div> -->
-        </article>
-        <article>
-            <!-- Зображення на картках товарів є декоративними, їх необхідно реалізувати псевдо-елементами -->
-            <h3>ice coffee</h3>
-            <p>Fragrant invigorating drink created from 100% natural ingredients without the use of preservatives 
-                    and flavor enhancers</p>
-            <btn></btn>
-            <!-- Кнопка зі стрілкою внизу картки повинна відкривати докладний опис продукту (реалізація модального вікна не є обов'язковим завданням). -->
-        </article>
-        <article>
-            <!-- Зображення на картках товарів є декоративними, їх необхідно реалізувати псевдо-елементами -->
-            <h3>milkshakes</h3>
-            <p>Sweet drinks based on milk and ice cream, supplemented with syrups, fruits, berries and other 
-                    sweets of your choice</p>
-            <btn></btn>
-            <!-- Кнопка зі стрілкою внизу картки повинна відкривати докладний опис продукту (реалізація модального вікна не є обов'язковим завданням). -->
-        </article>
+        </li>
+        <li class="products__card">
+          <!-- Зображення на картках товарів є декоративними, їх необхідно реалізувати псевдо-елементами -->
+          <h3 class="card__title">ice coffee</h3>
+          <p class="card__info">
+            Fragrant invigorating drink created from 100% natural ingredients
+            without the use of preservatives and flavor enhancers
+          </p>
+          <button type="button" class="card__button button button--arrow">
+            <svg class="button__icon"></svg>
+          </button>
+          <!-- Кнопка зі стрілкою внизу картки повинна відкривати докладний опис продукту (реалізація модального вікна не є обов'язковим завданням). -->
+        </li>
+        <li class="products__card">
+          <!-- Зображення на картках товарів є декоративними, їх необхідно реалізувати псевдо-елементами -->
+          <h3 class="card__title">milkshakes</h3>
+          <p class="card__info">
+            Sweet drinks based on milk and ice cream, supplemented with syrups,
+            fruits, berries and other sweets of your choice
+          </p>
+          <button type="button" class="card__button button button--arrow">
+            <svg class="button__icon"></svg>
+          </button>
+          <!-- Кнопка зі стрілкою внизу картки повинна відкривати докладний опис продукту (реалізація модального вікна не є обов'язковим завданням). -->
+        </li>
+        </ul>
+      </section>
 
-    </section>
-
-    <section>
+      <section id="about" class="conteiner about">
         <!-- About -->
-        <label>tradition and love</label>
-        <h2>how it's made?</h2>
-        <img alt="A big gray cow"/>
-        
+        <label class="about__label">tradition and love</label>
+        <h2 class="about__title">how it's made?</h2>
+        <img class="about__img" alt="A big gray cow" />
+        <p class="about__info">
+          Ice is a place where you will become not only a little happier, but
+          also healthier. Health is the main value for us, and we follow it when
+          creating our handmade desserts.
+          <br />We use traditional recipes and 100% natural ingredients. Our
+          products are so natural that they can be given to children from the
+          age of three years. Sweets lovers can expect 55 types of ice cream, 15
+          types of coffee and 23 milkshakes. <br />This is enough to choose ice
+          cream and coffee for any mood!
+        </p>
+
         <!-- Кнопка має відкривати модальне вікно з повним описом (реалізація модального вікна не є обов'язковим завданням). -->
-        <button>Read more</button>
+        <button type="button" class="about__button button button--yellow">
+          Read more
+          <svg class="button__icon"></svg>
+        </button>
         <!-- Модальне вікно -->
-        <!-- <div>
-            <h3></h3>
-            <object>
-            </video>
+        <!-- <div class="modal-window about-technology">
+            <h3 class="modal-window__title">How it’s made?</h3>
+            <video class="about-technology__video">
             <source src="URL">
-            <video>
-            </object>           
-           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et Lorem ipsum dolor sit amet, 
+            </video>          
+           <p class="about-technology__info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et Lorem ipsum dolor sit amet, 
             consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
         </div> -->
-    </section>
+      </section>
 
-    <section>
+      <section class="conteiner advantages">
         <!-- Advantages -->
         <!-- Сховати заголовок -->
-        <h2>Advantages</h2>
-        <!-- Перелік переваг необхідно реалізувати як сітку елементів.
-        Іконки переваг у макеті відображені у форматі png, їх необхідно реалізувати псевдо-елементами. -->
-        <ul>
-            <li>
-               <img> 
-               <p>Ice is a place where you will become not only a little happier, but also healthier. 
-            Health is the main value for us, and we follow it when creating our handmade desserts.</p>
-            </li>
-            <li>
-                <img>
-                <p>We use traditional recipes and 100% natural ingredients. 
-            Our products are so natural that they can be given to children from the age of three years. 
-            Sweets lovers can expect 55 types of ice cream, 15 types of coffee and 23 milkshakes.</p>
-            </li>
-            <li>
-                <img>
-                <p>This is enough to choose ice cream and coffee for any mood!</p>
-            </li>
+        <h2 class="title-hidden">Advantages</h2>
+        <!-- Перелік переваг необхідно реалізувати як сітку елементів. Іконки переваг - у форматі png, їх необхідно реалізувати псевдо-елементами. -->
+        <ul class="advantages__list">
+          <li class="advantages__item">
+            <img class="advantages__img" />
+            <p class="advantages__number">721</p>
+            <p class="advantages__text">
+              Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
+            </p>
+          </li>
+          <li class="advantages__item">
+            <img class="advantages__img" />
+            <p class="advantages__number">16kg</p>
+            <p class="advantages__text">
+              Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
+            </p>
+          </li>
+          <li class="advantages__item">
+            <img class="advantages__img" />
+            <p class="advantages__number">84</p>
+            <p class="advantages__text">
+              Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
+            </p>
+          </li>
         </ul>
-    </section>
+      </section>
 
-    <section>
+      <section class="conteiner gallery">
         <!-- Gallery -->
-        <!-- У секції двох-колірній фон, його потрібно реалізувати спозиціонувавши фонове зображення згідно макету.
-        Зображення в секції контентне.
+        <!-- У секції двох-колірній фон, його потрібно реалізувати спозиціонувавши фонове зображення згідно макету. Зображення в секції контентне.
         Додатково можна підібрати тематичні зображення морозива і зробити їх анімовану зміну. -->
         <!-- Заголовок приховати -->
-        <h2>Gallery</h2>
-        <img />
-    </section>
+        <h2 class="title-hidden">Gallery</h2>
+        <img class="gallery__img" />
+      </section>
 
-    <section>
+      <section class="conteiner reviews">
         <!-- Customer Reviews -->
         <!-- Заголовок прихоавти -->
-        <h2>Customer Reviews</h2>
-        <!-- У секції представлений слайдер із відгуками покупців.
-        Маркери внизу слайду - це посторінкова пагінація слайдера. 
+        <h2 class="title-hidden">Customer Reviews</h2>
+        <!-- У секції представлений слайдер із відгуками покупців. Маркери внизу слайду - це посторінкова пагінація слайдера. 
         Підключити бібліотеку слайда до проекту (їх не потрібно верстати, вони автоматично генеруються бібліотекою. 
         Потрібно буде лише зробити стилізацію пагінації). -->
-        <div>
-            <img alt="photo Emily"/>
-            <p>I love visiting your cafe. You prepare the most delicious ice cream in Los Angeles! In addition, 
-                you have beautiful serving, cozy atmosphere and polite staff.</p>
-            <p>Emily, Los Angeles</p>
+        <div class="slide">
+          <img class="slide__img" alt="photo Emily" />
+          <p class="slide__text">
+            I love visiting your cafe. You prepare the most delicious ice cream
+            in Los Angeles! In addition, you have beautiful serving, cozy
+            atmosphere and polite staff.
+          </p>
+          <p class="slide__info">Emily, Los Angeles</p>
         </div>
+      </section>
 
-    </section>
-
-    <section>
+      <section id="contacts" class="conteiner contacts">
         <!-- Contacts -->
         <!-- Заголовок приховати -->
-        <h2>Contacts</h2>
+        <h2 class="title-hidden">Contacts</h2>
         <!-- У секції міститься список адрес представництв компанії. Його необхідно реалізувати як сітку елементів -->
-        <ul>
-            <li>
+        <ul class="contacts__list">
+          <li class="contacts__item">
             <!-- Написи “Cafe” та “Food Truck” не є заголовками. Це категорії представництв.
          Контактні номери телефонів та email є посиланнями. Їх необхідно реалізувати з допомогою протоколів посилання -->
-                <p><strong>CAFE</strong></p>
-                <adress>Los Angeles<br>10340 Ridgeland Ave, Chicago Ridge, IL 60415, USA</adress>
-                <p>Monday - Friday<br>06:00 AM - 10:00 PM</p>
-                <p>Saturday - Sunday<br>08:00 AM - 16:00 PM</p>
-                <ul>
-                <li><a href="tel:+610383766284">+61(0) 383 766 284</a></li>
-                <li><a href="mailto:noreply@envato.com">noreply@envato.com</a></li>
-                </ul>
-            </li>
-            <li>
-                <p><strong>FOOD TRUCK</strong></p>
-                <adress>Chicago<br>1003 Manhattan Ave, Manhattan Beach, CA 90263, USA</adress>
-                <p>Monday - Friday<br>06:00 AM - 10:00 PM</p>
-                <p>Saturday - Sunday<br>08:00 AM - 16:00 PM</p>
-                <ul>
-                <li><a href="tel:+610383766284">+61(0) 383 766 284</a></li>
-                <li><a href="mailto:noreply@envato.com">noreply@envato.com</a></li>
-                </ul>
-            </li>
-            <li>
-                <p><strong>CAFE</strong></p>
-                <adress>New York<br>1726 Sterling Pl, Brooklyn, NY 11222, USA</adress>
-                <p>Monday - Friday<br>06:00 AM - 10:00 PM</p>
-                <p>Saturday - Sunday<br>08:00 AM - 16:00 PM</p>
-                <ul>
-                <li><a href="tel:+610383766284">+61(0) 383 766 284</a></li>
-                <li><a href="mailto:noreply@envato.com">noreply@envato.com</a></li>
-                </ul>
-            </li>
+            <p class="contacts__tipe"><strong>CAFE</strong></p>
+            <adress class="contacts__adress"
+              >Los Angeles<br />10340 Ridgeland Ave, Chicago Ridge, IL 60415,
+              USA</adress
+            >
+            <p class="contacts__timetable">
+              Monday - Friday<br />06:00 AM - 10:00 PM
+            </p>
+            <p class="contacts__timetable">
+              Saturday - Sunday<br />08:00 AM - 16:00 PM
+            </p>
+            <a class="contacts__tel" href="tel:+610383766284"
+              >+61(0) 383 766 284</a
+            >
+            <a class="contacts__mail" href="mailto:noreply@envato.com"
+              >noreply@envato.com</a
+            >
+          </li>
+          <li class="contacts__item">
+            <p class="contacts__tipe"><strong>FOOD TRUCK</strong></p>
+            <adress class="contacts__adress"
+              >Chicago<br />1003 Manhattan Ave, Manhattan Beach, CA 90263,
+              USA</adress
+            >
+            <p class="contacts__timetable">
+              Monday - Friday<br />06:00 AM - 10:00 PM
+            </p>
+            <p class="contacts__timetable">
+              Saturday - Sunday<br />08:00 AM - 16:00 PM
+            </p>
+            <a class="contacts__tel" href="tel:+610383766284"
+              >+61(0) 383 766 284</a
+            >
+            <a class="contacts__mail" href="mailto:noreply@envato.com"
+              >noreply@envato.com</a
+            >
+          </li>
+          <li class="contacts__item">
+            <p class="contacts__tipe"><strong>CAFE</strong></p>
+            <adress class="contacts__adress"
+              >New York<br />1726 Sterling Pl, Brooklyn, NY 11222, USA</adress
+            >
+            <p class="contacts__timetable">
+              Monday - Friday<br />06:00 AM - 10:00 PM
+            </p>
+            <p class="contacts__timetable">
+              Saturday - Sunday<br />08:00 AM - 16:00 PM
+            </p>
+            <a class="contacts__tel" href="tel:+610383766284"
+              >+61(0) 383 766 284</a
+            >
+            <a class="contacts__mail" href="mailto:noreply@envato.com"
+              >noreply@envato.com</a
+            >
+          </li>
         </ul>
         <!-- Кнопки “Our Locations” та “Franchise” повинні відкривати модальне вікно з маркованою карткою (реалізація модальних вікон не є обов'язковим завданням) -->
-        <button>Our Locations</button>
+        <button class="button button--yellow">
+          Our Locations
+          <svg class="button__icon"></svg>
+        </button>
         <!-- открывается модальное окно -->
-        <!-- <div> 
-            <h3>Our Locations</h3>
-            <img alt="здесь будет карта"/>
+        <!-- <div class="modal-window location"> 
+            <h3 class="modal-window__title">Our Locations</h3>
+            <img class="location__map" alt="здесь будет карта"/>
             ссылку оформить как кнопку
-            <a href="" target="_blank">Open map</a>
+            <a class="location__link" href="" target="_blank">Open map</a>
         </div> -->
-        <button>Franchise</button>
+        <button class="button button--line-up">
+          Franchise
+          <svg class="button__icon"></svg>
+        </button>
         <!-- открывается модальное окно -->
-        <!-- <div>
-            <h3>Thank you for your interest in owning an Ice Cream shop</h3>
-            <p>Due to the overwhelming volume of franchise requests we are not accepting new franchisee applications at this time. 
+        <!-- <div class="modal-window franchise>
+            <h3 class="modal-window__title">Thank you for your interest in owning an Ice Cream shop</h3>
+            <p class="franchise__info">Due to the overwhelming volume of franchise requests we are not accepting new franchisee applications at this time. 
                 Once the application process resumes, we will contact you for further information. 
                 Please fill out the contact information below and we will reach out for additional information. We appreciate your patience.</p>
-            <form>
-                <input type="text" placeholder="Name">
-                <input type="number" placeholder="Phone">
-                <input type="email" placeholder="Email">
-                <textarea type="text" placeholder="Comment"></textarea>
-                <button type="submit">Submit</button>
+            <form class="form form--franchise">
+                <input class="form__input" type="text" placeholder="Name">
+                <input class="form__input" type="number" placeholder="Phone">
+                <input class="form__input" type="email" placeholder="Email">
+                <textarea class="form__textarea" type="text" placeholder="Comment"></textarea>
+                <button class="form__button" type="submit">Submit</button>
             </form>
         </div> -->
-    </section>
+      </section>
     </main>
-    
+
     <!-- Footer -->
-    <footer>
-        <div>
-        <p>homemade ice cream made</p> 
-        <p>with passion</p>
-        </div>
-        <div>
-            <!-- social media -->
-            <ul>
-            <li><a href="github"><img/>github</a></li>
-            <li><a href="telegram"><img/>telegram</a></li>
-            <li><a href="facebook"><img/>facebook</a></li>
-            </ul>
-            <p>Feel free to contact <a href="tel:+610383766284">+61 (0) 383 766 284</a></p>
-        </div>
-        <p>&copy; 2022 - IceCream. All Rights Reserved.</p>
+    <footer class="conteiner footer">
+      <p class="footer__title">
+        homemade ice cream made <br /><span
+          class="footer__title footer__title--big"
+          >with passion</span
+        >
+      </p>
+      <div class="footer__social-link">
+        <!-- social media -->
+        <ul class="social-link__list">
+          <li class="social-link__github">
+            <a href="github"><img />github</a>
+          </li>
+          <li class="social-link__telegram">
+            <a href="telegram"><img />telegram</a>
+          </li>
+          <li class="social-link__facebook">
+            <a href="facebook"><img />facebook</a>
+          </li>
+        </ul>
+        <p class="footer__text">
+          Feel free to contact
+          <a class="footer__tel" href="tel:+610383766284"
+            >+61 (0) 383 766 284</a
+          >
+        </p>
+      </div>
+      <p class="footer__copyright">
+        &copy; 2022 - IceCream. All Rights Reserved.
+      </p>
     </footer>
-</body>
+    <script src="./js/menu.js"></script>
+  </body>
 </html>
