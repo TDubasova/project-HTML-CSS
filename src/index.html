@@ -112,7 +112,10 @@
             ./images/points-320@2x.png   620w,
             ./images/points-321@2x.png   642w,
             ./images/points-768.png      768w,
+            ./images/points-320@3x.png   960w,
+            ./images/points-321@3x.png   963w,
             ./images/points-1200.png    1200w,
+            ./images/points-320@4x.png  1280w,
             ./images/points-768@2x.png  1636w,
             ./images/points-1200@2x.png 2400w
           "
@@ -141,7 +144,9 @@
             ./images/horn-177@2x.png 354w,
             ./images/horn-218@2x.png 436w,
             ./images/horn-456.png    456w,
+            ./images/horn-177@3x.png 531w,
             ./images/horn-268@2x.png 536w,
+            ./images/horn-218.png    654w,
             ./images/horn-456@2x.png 912w
           "
           sizes="(min-width: 1200px) 456px, (min-width: 768px) 268px, (min-width: 480px) 218px, (min-width: 100px) 177px, 100vw"
@@ -157,16 +162,20 @@
         <h2 class="products__title">products</h2>
 
         <ul class="products__set">
-        <li class="products__card">
-          <!-- Зображення на картках товарів є декоративними, їх необхідно реалізувати псевдо-елементами -->
+        <li class="products__card ice-cream">
+          <div class="products__info products__info--icecream">
           <h3 class="card__title">ice cream</h3>
-          <p class="card__info">
+          <p class="card__text">
             Soft ice cream with a delicate taste. Made with milk, cream, sugar
             and natural stabilizer
           </p>
           <button type="button" class="card__button button button--arrow">
-            <svg class="button__icon"></svg>
+            <svg class="card__button-icon" width="40" height="16">
+            <use href="./images/icons.svg#arrow"></use>
+          </svg>
           </button>
+          </div>
+          
           <!-- Кнопка зі стрілкою внизу картки повинна відкривати докладний опис продукту (реалізація модального вікна не є обов'язковим завданням). -->
           <!-- Модальне вікно about prodact -->
           <!-- <div class="modal-window product-description">
@@ -195,28 +204,34 @@
             </form>
             </div> -->
         </li>
-        <li class="products__card">
-          <!-- Зображення на картках товарів є декоративними, їх необхідно реалізувати псевдо-елементами -->
+        <li class="products__card coffe">
+          <div class="products__info products__info--coffe">
           <h3 class="card__title">ice coffee</h3>
-          <p class="card__info">
+          <p class="card__text">
             Fragrant invigorating drink created from 100% natural ingredients
             without the use of preservatives and flavor enhancers
           </p>
           <button type="button" class="card__button button button--arrow">
-            <svg class="button__icon"></svg>
+            <svg class="card__button-icon" width="40" height="16">
+            <use href="./images/icons.svg#arrow"></use>
+          </svg>
           </button>
+          </div>
           <!-- Кнопка зі стрілкою внизу картки повинна відкривати докладний опис продукту (реалізація модального вікна не є обов'язковим завданням). -->
         </li>
-        <li class="products__card">
-          <!-- Зображення на картках товарів є декоративними, їх необхідно реалізувати псевдо-елементами -->
+        <li class="products__card milkshake">
+          <div class="products__info products__info--milkshake">
           <h3 class="card__title">milkshakes</h3>
-          <p class="card__info">
+          <p class="card__text">
             Sweet drinks based on milk and ice cream, supplemented with syrups,
             fruits, berries and other sweets of your choice
           </p>
           <button type="button" class="card__button button button--arrow">
-            <svg class="button__icon"></svg>
+            <svg class="card__button-icon" width="40" height="16">
+            <use href="./images/icons.svg#arrow"></use>
+          </svg>
           </button>
+          </div>
           <!-- Кнопка зі стрілкою внизу картки повинна відкривати докладний опис продукту (реалізація модального вікна не є обов'язковим завданням). -->
         </li>
         </ul>

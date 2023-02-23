@@ -172,6 +172,8 @@
     font-weight: 600;
     font-size: 12px;
     line-height: 1.2;
+    color: $color-logo;
+    text-decoration: underline;
     &:not(:last-child) {
         margin-right: 12px;
     }
@@ -180,7 +182,9 @@
 .menu__link--btn {
     display: block;
     box-sizing: border-box;
-    text-align: center;  
+    text-align: center; 
+    text-decoration: none;
+    color: #000000;
     padding: 11px 26px;
     border: 2px solid $color-logo;
     border-radius: 8px;
@@ -252,7 +256,7 @@
     position: absolute;
     width: 177px;
     height: 217px;
-    left: 83px;
+    right: 60px;
     bottom: 0;
 
     @media screen and (min-width: 480px) {
