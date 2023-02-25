@@ -1,13 +1,20 @@
 .products {
-    height: 2236px;
-    width: 100%;
-    padding-top: 88px;
     box-sizing: border-box;
+    min-width: 320px;
+    height: 1937px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 60px;
     text-align: center;
-    background-color: white;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+
+    // @media screen and (min-width: 480px) {
+    //     height: 1957px;
+    // }
+
+    // @media screen and (min-width: 768px) {
+    //     height: 838px;
+    // }
+
 }
 
 .products__label {
@@ -25,16 +32,25 @@
     font-weight: 400;
     font-size: 30px;
     line-height: 1.25;
-    letter-spacing: 0.04em;
     text-transform: uppercase;
     color: #131313;
 }
 
 .products__set {
+    width: 280px;
     padding: 0;
-    width: 100%;
-    text-align: center;
+    margin: 0 auto;
     list-style: none;
+
+    // @media screen and (min-width: 480px) {
+    //     width: 320px;
+    // }
+
+    // @media screen and (min-width: 768px) {
+    //     display: flex;
+    //     gap: 30px;
+    // }
+    
 }
 
 .products__card {
@@ -43,10 +59,15 @@
     padding-top: 123px;
     width: 280px;
     height: 528px;
+
+    // @media screen and (min-width: 480px) {
+    //     width: 320px;
+    //     height: 533px;
+    // }
 }
 
 .products__card:not(:last-child) {
-    margin-bottom: 168px;
+    margin-bottom: 60px;
 }
 
 .products__card::before {
@@ -59,6 +80,10 @@
     background-size: contain;
     background-repeat: no-repeat;
     border-radius: 50%;
+
+    // @media screen and (min-width: 480px) {
+    //     left: 60px;
+    // }
 }
 
 .ice-cream::before {
@@ -107,6 +132,10 @@
     width: 100%;
     border-radius: 24px;
     padding-top: 123px;
+
+    // @media screen and (min-width: 480px) {
+    //     height: 428px;
+    // }
 }
 
 .products__info--icecream {
@@ -128,18 +157,16 @@
     font-size: 20px;
     line-height: 1.2;
     text-align: center;
-    letter-spacing: 0.04em;
     text-transform: uppercase;
 }
 
 .card__text {
-    display: block;
+    // display: block;
     margin: 0 auto;
     width: 200px;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.78;
-    letter-spacing: 0.04em;
     color: #131313;
 }
 

@@ -1,6 +1,9 @@
 .header-hero {
+    box-sizing: border-box;
+    min-width: 320px;
     position: relative;
     height: 520px;
+    margin: 0 auto;
 
     @media screen and (min-width: 480px) {
         height: 415px;
@@ -286,7 +289,7 @@
         opacity: 0;
     }
 
-     @media screen and (min-width: 768px) {
+    @media screen and (min-width: 768px) {
         width: 152px;
         height: 152px;
         left: 16px;

@@ -1,0 +1,61 @@
+.about {
+    height: 952px;
+    box-sizing: border-box;
+    min-width: 320px;
+    margin: 0 auto;
+    text-align: center;
+    color: $primery-text-color;
+    padding-top: 61px;
+}
+
+.about__label {
+    display: block;
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.about__title {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 32px;
+    width: 200px;
+    font-family: 'Seymour One';
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 1.26;
+    text-transform: uppercase;
+}
+
+.about__img {
+    display: block;
+    width: 280px;
+    height: 300px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.about__info {
+    width: 220px;
+    height: 305px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.about__text {
+    display: block;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.62;
+}
+
+.about__text--big-line-height {
+    line-height: 1.76;
+    letter-spacing: 0.04em;
+}
+
+.about__text:not(:last-child) {
+    margin-bottom: 4px;
+}

@@ -1,6 +1,8 @@
 body {
     font-family: "Montserrat", sans-serif;
     box-sizing: border-box;
+    margin: 0 auto;
+    line-height: 1.2;
     
 }
 
@@ -35,16 +37,15 @@ ul {
 }
 
 .conteiner {
-    box-sizing: border-box;
     padding-right: 20px;
     padding-left: 20px;
-    margin-left: auto;
-    margin-right: auto;
     border: 1px solid tomato;
     
 
     @media screen and (min-width: 480px) {
         width: 480px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     @media screen and (min-width: 768px) {
@@ -58,5 +59,15 @@ ul {
         padding-right: 16px;
         padding-left: 16px;
     }
+}
+
+.title--hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    overflow: hidden;
 }
 
