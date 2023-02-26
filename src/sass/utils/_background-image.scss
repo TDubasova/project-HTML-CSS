@@ -59,53 +59,42 @@
     }
 }
 
-// .reviews-contacts {
-//     background: url('../images/background_image/background_mob-reviews@1x.png') $primery-color;
-//     background-position: top 0 right 0;
-//     background-repeat: no-repeat;
-//     background-size: cover;
+.reviews {
+    background: url('../images/background_image/background_mob-reviews@1x.png') white;
+     background-repeat: no-repeat;
+    background-size: cover;
 
-    // @media screen and (min-width: 768px) {
-    //     background-image: url('../images/background_tablet1x.png');
-    // }
+    @media screen and (min-width: 480px) {
+        background-image: url('../images/background_image/background_mob480@1x.png');
+    }
 
-    // @media screen and (min-width: 1200px) {
-    //     max-width: 1600px;
-    //     background-image: url('../images/background_desktop1x.png');
-    // }
-// }
+    @media screen and (min-width: 768px) {
+        background-image: url('../images/background_image/bacground_tablet@1x.png');
+    }
 
-// @media (min-device-pixel-ratio: 2),
-// (-webkit-min-device-pixel-ratio: 2),
-// (min-resolution: 192dpi),
-// (min-resolution: 2dppx) {
+    @media screen and (min-width: 1200px) {
+        background-image: url('../images/background_image/bacground_desktop@1x.png');
+    }
+}
 
-//     .reviews {
-//         background-image: url('../images/backgroud_mob2x.png');
-//         background-size: cover;
-//     }
-// }
+@media (min-device-pixel-ratio: 2),
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
 
-// @media (min-device-pixel-ratio: 2),
-// (min-resolution: 192dpi),
-// (min-resolution: 2dppx) {
-    
-//     .gallery,
-//     .reviews {
-//         @media screen and (min-width: 768px) and (max-width: 1199px) {
-//             background-image: url('../images/background_tablet2x.png');
-//         }
-//     }
-// }
+    .reviews {
+        background-image: url('../images/background_image/background_mob-reviews@2x.png');
 
-// @media (min-device-pixel-ratio: 2),
-// (min-resolution: 192dpi),
-// (min-resolution: 2dppx) {
-    
-//     .gallery,
-//     .reviews {
-//         @media screen and (min-width: 1200px) {
-//             background-image: url('../images/background_desktop2x.png');
-//         }
-//     }
-// }
+        @media screen and (min-width: 480px) {
+            background-image: url('../images/background_image/background_mob480@2x.png');
+        }
+        
+        @media screen and (min-width: 768px) {
+            background-image: url('../images/background_image/bacground_tablet@2x.png');
+        }
+        
+        @media screen and (min-width: 1200px) {
+            background-image: url('../images/background_image/bacground_desktop@2x.png');
+        }
+    }
+}

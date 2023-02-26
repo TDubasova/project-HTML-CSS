@@ -382,99 +382,156 @@
             "
             sizes="(min-width: 1200px) 1013px, (min-width: 768px) 704px, (min-width: 480px) 440px, (max-width: 479px) 280px, 100vw"
             src="./images/gallery-280.jpg"
-            alt="Three pink white ice cream sticks lying on the ice next to the cherries"
+            alt="The five white and pink ice cream on a stick and some cherries that lie on ice"
           />
           </div>
         </div>
       </section>
 
       <section class="conteiner reviews">
-        <!-- Customer Reviews -->
-        <!-- Заголовок прихоавти -->
-        <h2 class="title title--hidden">Customer Reviews</h2>
-        <!-- У секції представлений слайдер із відгуками покупців. Маркери внизу слайду - це посторінкова пагінація слайдера. 
-        Підключити бібліотеку слайда до проекту (їх не потрібно верстати, вони автоматично генеруються бібліотекою. 
-        Потрібно буде лише зробити стилізацію пагінації). -->
-        <div class="slide">
-          <img class="slide__img" alt="photo Emily" />
-          <p class="slide__text">
+       <h2 class="title title--hidden">Customer Reviews</h2>
+       <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img class="swiper-slide__img" 
+            src="./images/photo-Emili-85.jpg"
+            alt="photo Emily" />
+            <p class="swiper-slide__text">
             I love visiting your cafe. You prepare the most delicious ice cream
             in Los Angeles! In addition, you have beautiful serving, cozy
             atmosphere and polite staff.
-          </p>
-          <p class="slide__info">Emily, Los Angeles</p>
+            </p>
+            <p class="swiper-slide__info">Emily, Los Angeles</p>
+          </div>
+          <div class="swiper-slide">
+            <img class="swiper-slide__img" 
+            src="./images/photo-Bryan-85.jpg"
+            alt="photo Bryan" />
+            <p class="swiper-slide__text">
+            Every day we come to you with friends after classes in college. We love your ice cream and casual atmosphere!
+            </p>
+            <p class="swiper-slide__info">Bryan, New-York</p>
+          </div>
+          <div class="swiper-slide">
+            <img class="swiper-slide__img" 
+            src="./images/photo-Diana-85.jpg"
+            alt="photo Diana" />
+            <p class="swiper-slide__text">
+            Ice cream is my passion! I love your chocolate hazelnut ice cream! 
+            And I really like the excellent service - always served politely and quickly!
+            </p>
+            <p class="swiper-slide__info">Diana, Chicago</p>
+          </div>
         </div>
+        <div class="swiper-pagination"></div>
+      </div>
       </section>
 
       <section id="contacts" class="conteiner contacts">
         <!-- Contacts -->
         <!-- Заголовок приховати -->
-        <h2 class="title-hidden">Contacts</h2>
+        <h2 class="title title--hidden">Contacts</h2>
         <!-- У секції міститься список адрес представництв компанії. Його необхідно реалізувати як сітку елементів -->
         <ul class="contacts__list">
           <li class="contacts__item">
             <!-- Написи “Cafe” та “Food Truck” не є заголовками. Це категорії представництв.
          Контактні номери телефонів та email є посиланнями. Їх необхідно реалізувати з допомогою протоколів посилання -->
-            <p class="contacts__tipe"><strong>CAFE</strong></p>
-            <adress class="contacts__adress"
-              >Los Angeles<br />10340 Ridgeland Ave, Chicago Ridge, IL 60415,
-              USA</adress
-            >
-            <p class="contacts__timetable">
-              Monday - Friday<br />06:00 AM - 10:00 PM
-            </p>
-            <p class="contacts__timetable">
-              Saturday - Sunday<br />08:00 AM - 16:00 PM
-            </p>
-            <a class="contacts__tel" href="tel:+610383766284"
-              >+61(0) 383 766 284</a
-            >
-            <a class="contacts__mail" href="mailto:noreply@envato.com"
-              >noreply@envato.com</a
-            >
+            <p class="contacts__type">CAFE</p>
+            <p class="contacts__town">Chicago</p>
+            <adress class="contacts__adress">
+              10340 Ridgeland Ave, <br/>Chicago Ridge, IL 60415, USA
+            </adress>
+            <hr class="contacts__border">
+
+            <ul class="contacts__timetable">
+             <li class="timetable__item">
+              Monday - Friday
+              <br/><span>06:00 AM - 10:00 PM</span>
+              </li>
+             <li class="timetable__item">
+              Saturday - Sunday
+              <br /><span>08:00 AM - 16:00 PM</span>
+              </li>
+            </ul>
+            <hr class="contacts__border">
+            <ul class="contacts__communication">
+              <li>
+                <a href="tel:+610383766284"
+                  >+61(0) 383 766 284</a>
+              </li>
+              <li>
+                <a href="mailto:noreply@envato.com"
+                  >noreply@envato.com</a>
+              </li>
+            </ul>  
           </li>
           <li class="contacts__item">
-            <p class="contacts__tipe"><strong>FOOD TRUCK</strong></p>
-            <adress class="contacts__adress"
-              >Chicago<br />1003 Manhattan Ave, Manhattan Beach, CA 90263,
-              USA</adress
-            >
-            <p class="contacts__timetable">
-              Monday - Friday<br />06:00 AM - 10:00 PM
-            </p>
-            <p class="contacts__timetable">
-              Saturday - Sunday<br />08:00 AM - 16:00 PM
-            </p>
-            <a class="contacts__tel" href="tel:+610383766284"
-              >+61(0) 383 766 284</a
-            >
-            <a class="contacts__mail" href="mailto:noreply@envato.com"
-              >noreply@envato.com</a
-            >
+            <p class="contacts__type">FOODTRUCK</p>
+            <p class="contacts__town">Los Angeles</p>
+            <adress class="contacts__adress">
+             1003 Manhattan Ave, Manhattan Beach, CA 90263, USA
+            </adress>
+            <hr class="contacts__border">
+
+            <ul class="contacts__timetable">
+              <li class="timetable__item">
+              Monday - Friday
+              <br/><span>06:00 AM - 10:00 PM</span>
+              </li>
+             <li class="timetable__item">
+              Saturday - Sunday
+              <br /><span>08:00 AM - 16:00 PM</span>
+              </li>
+            </ul>
+
+            <hr class="contacts__border">
+            <ul class="contacts__communication">
+              <li>
+                <a href="tel:+610383766284"
+                  >+61(0) 383 766 284</a>
+              </li>
+              <li>
+                <a href="mailto:noreply@envato.com"
+                  >noreply@envato.com</a>
+              </li>
+            </ul>  
           </li>
           <li class="contacts__item">
-            <p class="contacts__tipe"><strong>CAFE</strong></p>
-            <adress class="contacts__adress"
-              >New York<br />1726 Sterling Pl, Brooklyn, NY 11222, USA</adress
-            >
-            <p class="contacts__timetable">
-              Monday - Friday<br />06:00 AM - 10:00 PM
-            </p>
-            <p class="contacts__timetable">
-              Saturday - Sunday<br />08:00 AM - 16:00 PM
-            </p>
-            <a class="contacts__tel" href="tel:+610383766284"
-              >+61(0) 383 766 284</a
-            >
-            <a class="contacts__mail" href="mailto:noreply@envato.com"
-              >noreply@envato.com</a
-            >
+            <p class="contacts__type">CAFE</p>
+            <p class="contacts__town">New York</p>
+            <adress class="contacts__adress">
+              1726 Sterling Pl, Brooklyn, NY<br/>11222, USA
+            </adress>
+            <hr class="contacts__border">
+            <ul class="contacts__timetable">
+              <li class="timetable__item">
+              Monday - Friday
+              <br/><span>06:00 AM - 10:00 PM</span>
+              </li>
+             <li class="timetable__item">
+              Saturday - Sunday
+              <br /><span>08:00 AM - 16:00 PM</span>
+              </li>
+            </ul>
+            <hr class="contacts__border">
+            <ul class="contacts__communication">
+              <li>
+                <a href="tel:+610383766284"
+                  >+61(0) 383 766 284</a>
+              </li>
+              <li>
+                <a href="mailto:noreply@envato.com"
+                  >noreply@envato.com</a>
+              </li>
+            </ul>           
           </li>
         </ul>
         <!-- Кнопки “Our Locations” та “Franchise” повинні відкривати модальне вікно з маркованою карткою (реалізація модальних вікон не є обов'язковим завданням) -->
-        <button class="button button--yellow">
+        <button class="button button--yellow contacts__button contacts__button--yellow">
           Our Locations
-          <svg class="button__icon"></svg>
+          <svg class="button__icon" width="12" height="12">
+            <use href="./images/icons.svg#icon-Vector"></use>
+          </svg>
         </button>
         <!-- открывается модальное окно -->
         <!-- <div class="modal-window location"> 
@@ -483,9 +540,11 @@
             ссылку оформить как кнопку
             <a class="location__link" href="" target="_blank">Open map</a>
         </div> -->
-        <button class="button button--line-up">
+        <button class="button button--line-up contacts__button">
           Franchise
-          <svg class="button__icon"></svg>
+          <svg class="button__icon" width="12" height="12">
+            <use href="./images/icons.svg#icon-Vector"></use>
+          </svg>
         </button>
         <!-- открывается модальное окно -->
         <!-- <div class="modal-window franchise>
@@ -537,5 +596,6 @@
       </p>
     </footer>
     <script src="./js/menu.js" type="module"></script>
+    <script src="./js/swiper.js" type="module"></script>
   </body>
 </html>

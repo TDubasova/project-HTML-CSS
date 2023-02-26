@@ -1,7 +1,16 @@
-// import Swiper from 'swiper';
+import Swiper, { Pagination } from 'swiper';
 
-  // import styles bundle
-//   import 'swiper/css/bundle';
+const swiper = new Swiper('.swiper', {
+  modules: [Pagination],
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'bullets',
+    clickable: true,
+    dynamicBullets: true,
+    
+  },
 
-  // init Swiper:
-//   const swiper = new Swiper(...);
+});
+
+
+swiper.pagination.init();
