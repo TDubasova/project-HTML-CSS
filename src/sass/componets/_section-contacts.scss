@@ -9,7 +9,13 @@
 .contacts__list {
     position: absolute;
     top: -353px;
-    width: 280px;
+    left: 20px;
+    width: calc(100% - 40px);
+
+    @media screen and (min-width: 480px) {
+        left: 100px;
+        width: calc(100% - 200px);
+    }
 }
 
 .contacts__item {
@@ -61,7 +67,6 @@
 .contacts__border {
     width: 216px;
     margin-left: 0;
-    border-top: 1px solid rgba(225, 225, 225, 1);
 }
 
 .contacts__timetable {
@@ -99,14 +104,20 @@
 }
 
 .contacts__button {
-    box-sizing: border-box;
-    display: block;
-    margin: 0 auto;
-    width: 196px;
+    margin-left: 42px;
+    margin-right: 42px;
+    min-width: 196px;
+    width: calc(100% - 84px);
     border: none;
     font-weight: 600;
     font-size: 14px;
     line-height: 1.05;
+
+    @media screen and (min-width: 480px) {
+        margin-right: 122px;
+        margin-left: 122px;
+        width: calc(100% - 244px);
+    }
 }
 
 .contacts__button--yellow {

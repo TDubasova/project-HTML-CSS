@@ -16,6 +16,7 @@
 
 .header {
     display: flex;
+    box-sizing: border-box;
     justify-content: space-between;
     align-items: center;
     position: relative;
@@ -35,6 +36,13 @@
 
 .navigation {
     display: block;
+    margin: 0 auto;
+    padding-top: 100px;
+    text-align: center;
+
+    @media screen and (min-width: 480px) {
+        padding-top: 104px;
+    }
 
     @media screen and (min-width: 768px) {
         display: flex;
@@ -43,10 +51,19 @@
     }
 }
 
+.navigation__item:not(:last-child) {
+    margin-bottom: 32px;
+}
+
 .header-menu__link {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.22;
+    color: $primery-text-color;
+
     &:hover,
     &:focus {
-        color: $color-logo;
+        color: #131313;
     }
 
     @media screen and (min-width: 1200px) {
@@ -63,12 +80,7 @@
 }
 
 .hero__info {
-    display: flex;
-    justify-content: space-between;
-
-    @media screen and (max-width: 479px) {
         margin-top: 50px;
-    }
     
     @media screen and (min-width: 480px) {
         margin-top: 40px;
@@ -83,15 +95,8 @@
     }
 }
 
-.hero__menu {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-}
-
 .hero__title {
     width: 247px;
-
     font-family: 'Seymour One';
     font-weight: 400;
     font-size: 26px;
@@ -99,10 +104,7 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: $primery-text-color;
-
-    @media screen and (max-width: 767px) {
-        margin-bottom: 32px;
-    }
+    margin-bottom: 32px;
     
     @media screen and (min-width: 768px) {
         margin-bottom: 24px;
@@ -116,11 +118,8 @@
 }
 
 .hero__title--bold {
-    @media screen and (max-width: 1199px) {
-        font-size: 34px;
-        line-height: 0.96;
-    }
-    
+    font-size: 34px;
+    line-height: 0.96;
 }
 
 .menu__list {
@@ -134,11 +133,49 @@
         }
 }
 
-.info__list {
-    @media screen and (max-width: 767px) {
-        display: none;
+.menu__link {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.2;
+    color: $color-logo;
+    text-decoration: underline;
+
+    &:not(:last-child) {
+        margin-right: 12px;
     }
-    text-align: end;
+}
+
+.menu__link:hover {
+    color: $button-hover;
+}
+
+.menu__link:focus {
+    color: $primery-text-color;
+}
+
+.menu__link--btn {
+    display: block;
+    box-sizing: border-box;
+    text-align: center;
+    text-decoration: none;
+    color: #000000;
+    padding: 11px 26px;
+    border: 2px solid $color-logo;
+    border-radius: 8px;
+}
+
+.menu__link--btn:hover,
+.menu__link--btn:focus {
+    border: 2px solid $button-hover;
+}
+
+.info__list {
+    opacity: 0;
+
+    @media screen and (min-width: 768px) {
+        opacity: 1;
+        text-align: end;
+    }
 }
 
 .info__item{
@@ -170,29 +207,6 @@
     }
 }
 
-
-.menu__link {
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 1.2;
-    color: $color-logo;
-    text-decoration: underline;
-    &:not(:last-child) {
-        margin-right: 12px;
-    }
-}
-
-.menu__link--btn {
-    display: block;
-    box-sizing: border-box;
-    text-align: center; 
-    text-decoration: none;
-    color: #000000;
-    padding: 11px 26px;
-    border: 2px solid $color-logo;
-    border-radius: 8px;
-}
-
 .hero__feature {
     display: none;
 
@@ -222,7 +236,6 @@
         line-height: 1.4;
         margin-bottom: 24px;
     }
-
 }
 
 .feature__icon {
@@ -251,9 +264,7 @@
         width: 1200px;
         height: 383px;
     }
-
 }
-
 
 .hero__img--horn {
     position: absolute;
@@ -283,7 +294,6 @@
 
 .hero__img--plate {
     position: absolute;
-    
 
     @media screen and (max-width: 767px) {
         opacity: 0;

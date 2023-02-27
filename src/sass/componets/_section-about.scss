@@ -1,11 +1,14 @@
 .about {
-    height: 952px;
     box-sizing: border-box;
     min-width: 320px;
     margin: 0 auto;
     text-align: center;
     color: $primery-text-color;
     padding-top: 61px;
+
+    @media screen and (min-width: 480px) {
+        padding-top: 60px;
+    }
 }
 
 .about__label {
@@ -58,4 +61,10 @@
 
 .about__text:not(:last-child) {
     margin-bottom: 4px;
+}
+
+.about__button {
+    width: 164px;
+    font-weight: 600;
+    font-size: 14px;
 }

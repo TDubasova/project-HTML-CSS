@@ -3,24 +3,34 @@
     position: relative;
     min-width: 320px;
     height: 73px;
-    
+
+    @media screen and (min-width: 480px) {
+        height: 81px;
+    }
 }
 
 .gallery__slideshow {
-    box-sizing: border-box;
-    margin-left: 0;
-    margin-right: 0;
-    width: 280px;
+    
+    position: absolute;
+    top: 32px;
+    left: 20px;
     height: 130px;
+    overflow: hidden;
+    z-index: 99;
+    width: calc(100% - 40px);
+    overflow: hidden;
+    height: 130px;
+    border-radius: 8px;
+
+    @media screen and (min-width: 480px) {
+        height: 204px;
+    }
     
 }
 
 .gallery__item {
     position: absolute;
-    top: 32px;
-    left: calc(20px);
-    width: calc(100% - 40px);
-    overflow: hidden;
+    width: 100%;
     z-index: 99;
     opacity: 0;
     border-radius: 8px;
@@ -30,8 +40,13 @@
 .gallery__img {
     display: block;
     height: 130px;
+    width: 100%;
     object-fit: cover;
     animation: zoom 20s infinite;
+
+    @media screen and (min-width: 480px) {
+            height: 204px;
+    }
 }
 
 .gallery__item--01 {

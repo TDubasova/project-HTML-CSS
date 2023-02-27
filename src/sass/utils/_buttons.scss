@@ -1,16 +1,38 @@
 .button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     height: 42px;
     border-radius: 10px;
-    text-align: center;
+    border: none;
+}
+
+.button__icon {
+    margin-left: 4px;
+}
+
+.button:hover,
+.button:focus {
+    background-color: $button-hover;
+}
+
+.button:focus {
+    color: $primery-text-color;
+    fill: $primery-text-color;
 }
 
 .button--yellow {
+    font-weight: 600;
+    font-size: 14px;
     width: 152px;
     background-color: $color-logo;
-    
 }
 
 .button__menu {
+    display: block;
+    margin: 0 auto;
+    margin-top: 110px;
+
     @media screen and (min-width: 768px) {
         display: none;
     }

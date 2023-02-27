@@ -32,7 +32,7 @@
             class="menu__icon"
             width="32"
             height="32"
-            aria-label="Мобільне меню"
+            aria-label="Mobile menu"
           >
             <use
               class="menu__close"
@@ -564,36 +564,48 @@
     </main>
 
     <!-- Footer -->
-    <footer class="conteiner footer">
+    <footer class="footer">
+      <div class="conteiner footer__conteiner">
       <p class="footer__title">
-        homemade ice cream made <br /><span
-          class="footer__title footer__title--big"
-          >with passion</span
-        >
-      </p>
-      <div class="footer__social-link">
-        <!-- social media -->
-        <ul class="social-link__list">
-          <li class="social-link__github">
-            <a href="github"><img />github</a>
+        HOMEMADE ICE CREAM MADE</p>
+      <p class="footer__big-title">WITH PASSION</p>
+        <ul class="footer__social-list">
+          <li class="social-list__item">
+            <a class="social-list__link" href="https://github.com/" target="_blank" rel="noreferrer noopener">
+              <svg class="social-list__icon" width="20" height="20">
+              <use href="./images/icons.svg#icon-git"></use>
+          </svg>
+            </a>
           </li>
-          <li class="social-link__telegram">
-            <a href="telegram"><img />telegram</a>
+          <li class="social-list__item">
+            <a class="social-list__link" href="https://telegram.org/" target="_blank" rel="noreferrer noopener">
+              <svg class="social-list__icon" width="20.4" height="15.87">
+              <use href="./images/icons.svg#icon-telegram"></use>
+          </svg>
+            </a>
           </li>
-          <li class="social-link__facebook">
-            <a href="facebook"><img />facebook</a>
+          <li class="social-list__item">
+            <a class="social-list__link" href="https://www.facebook.com/" target="_blank" rel="noreferrer noopener">
+               <svg class="social-list__icon" width="9.35" height="20.4">
+              <use href="./images/icons.svg#icon-facebook"></use>
+          </svg>
+            </a>
           </li>
         </ul>
-        <p class="footer__text">
+        <p class="footer__comunication">
           Feel free to contact
-          <a class="footer__tel" href="tel:+610383766284"
-            >+61 (0) 383 766 284</a
-          >
+            <a href="tel:+610383766284">+61 (0) 383 766 284</a>
         </p>
       </div>
-      <p class="footer__copyright">
-        &copy; 2022 - IceCream. All Rights Reserved.
+      <hr>
+      <div class="footer__copyright">
+      <p class="copyright__text">
+        &copy; 2022 - IceCream. 
       </p>
+      <p class="copyright__text">
+        All Rights Reserved.
+      </p>
+      </div>
     </footer>
     <script src="./js/menu.js" type="module"></script>
     <script src="./js/swiper.js" type="module"></script>

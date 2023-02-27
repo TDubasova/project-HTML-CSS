@@ -1,20 +1,11 @@
 .products {
     box-sizing: border-box;
     min-width: 320px;
-    height: 1937px;
     margin-left: auto;
     margin-right: auto;
     padding-top: 60px;
+    padding-bottom: 60px;
     text-align: center;
-
-    // @media screen and (min-width: 480px) {
-    //     height: 1957px;
-    // }
-
-    // @media screen and (min-width: 768px) {
-    //     height: 838px;
-    // }
-
 }
 
 .products__label {
@@ -34,6 +25,10 @@
     line-height: 1.25;
     text-transform: uppercase;
     color: #131313;
+
+    @media screen and (min-width: 480px) {
+        margin-bottom: 46px;
+    }
 }
 
 .products__set {
@@ -42,9 +37,9 @@
     margin: 0 auto;
     list-style: none;
 
-    // @media screen and (min-width: 480px) {
-    //     width: 320px;
-    // }
+    @media screen and (min-width: 480px) {
+        width: 320px;
+    }
 
     // @media screen and (min-width: 768px) {
     //     display: flex;
@@ -60,10 +55,10 @@
     width: 280px;
     height: 528px;
 
-    // @media screen and (min-width: 480px) {
-    //     width: 320px;
-    //     height: 533px;
-    // }
+    @media screen and (min-width: 480px) {
+        width: 320px;
+        height: 536px;
+    }
 }
 
 .products__card:not(:last-child) {
@@ -81,9 +76,9 @@
     background-repeat: no-repeat;
     border-radius: 50%;
 
-    // @media screen and (min-width: 480px) {
-    //     left: 60px;
-    // }
+    @media screen and (min-width: 480px) {
+        left: 60px;
+    }
 }
 
 .ice-cream::before {
@@ -133,9 +128,9 @@
     border-radius: 24px;
     padding-top: 123px;
 
-    // @media screen and (min-width: 480px) {
-    //     height: 428px;
-    // }
+    @media screen and (min-width: 480px) {
+        height: 428px;
+    }
 }
 
 .products__info--icecream {
@@ -161,25 +156,40 @@
 }
 
 .card__text {
-    // display: block;
     margin: 0 auto;
     width: 200px;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.78;
     color: #131313;
+
+    @media screen and (min-width: 480px) {
+        line-height: 1.76;
+    }
 }
 
 .products__info--icecream > .card__text {
     margin-bottom: 101px;
+
+    @media screen and (min-width: 480px) {
+        margin-bottom: 106px;
+    }
 }
 
 .products__info--coffe > .card__text {
     margin-bottom: 53px;
+
+    @media screen and (min-width: 480px) {
+        margin-bottom: 61px;
+    }
 }
 
 .products__info--milkshake > .card__text {
     margin-bottom: 56px;
+
+    @media screen and (min-width: 480px) {
+        margin-bottom: 81px;
+    }
 }
 
 .card__button {
