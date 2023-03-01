@@ -16,8 +16,8 @@
   </head>
   <body>
     <!-- header -->
-    <header class="conteiner header-hero">
-      <div class="header">
+    <header class="header-hero">
+      <div class="conteiner header__menu">
         <!-- logo -->
         <img class="logo" src="./images/logo@2x.png" alt="company logo Ice" />
         <!-- Navigation -->
@@ -57,42 +57,43 @@
             </li>
           </ul>
           <!-- Modal window -->
-          <button type="button" class="button button--yellow button__menu">
+          <button type="button" class="button button--yellow button__mobile-menu">
             Buy now
             <svg class="button__icon" width="12" height="12">
               <use href="./images/icons.svg#icon-Vector"></use>
             </svg>
           </button>
         </div>
-        <button type="button" class="button button--yellow button__header">
-          Buy now
-          <svg class="button__icon" width="12" height="12">
-            <use href="./images/icons.svg#icon-Vector"></use>
-          </svg>
-        </button>
-      </div>
-
+        <button type="button" class="button button--yellow button__menu">
+            Buy now
+            <svg class="button__icon" width="12" height="12">
+              <use href="./images/icons.svg#icon-Vector"></use>
+            </svg>
+          </button>
+        </div>
+      
       <!-- Hero -->
-      <div class="hero">
+      <div class="conteiner hero">
         <div class="hero__info">
-          <div class="hero__menu">
+
+          <div class="info__menu">
+
             <h1 class="hero__title">
               ice cream made with<span class="hero__title hero__title--bold">
-                passion</span
-              >
+                passion</span>
             </h1>
+
             <ul class="menu__list">
               <li class="menu__item">
-                <a class="menu__link menu__link--btn" href="#products"
-                  >Products</a
-                >
+                <a class="menu__link menu__link--btn" href="#products">Products</a>
               </li>
               <li class="menu__item">
                 <a class="menu__link" href="#about">How it's made?</a>
               </li>
             </ul>
-          </div>
-          <ul class="info__list">
+            </div>
+
+            <ul class="info__list">
             <li class="info__item">
               <p class="info__txt info__txt--bold">16</p>
               <p class="info__txt">cafes</p>
@@ -103,6 +104,7 @@
             </li>
           </ul>
         </div>
+          
 
         <div class="hero__feature">
           <p class="feature__text">
@@ -163,23 +165,25 @@
           src="./images/horn-177.png"
         />
       </div>
+      </div>
     </header>
 
     <main>
-      <section id="products" class="conteiner products">
+      <section id="products" class="products">
         <!-- Products -->
+        <div class="conteiner products__conteiner">
         <label class="products__label">100% natural</label>
         <h2 class="products__title">products</h2>
 
         <ul class="products__set">
-          <li class="products__card ice-cream">
-            <div class="products__info products__info--icecream">
+          <li class="products__card">
+            <div class="products__info">
               <h3 class="card__title">ice cream</h3>
               <p class="card__text">
                 Soft ice cream with a delicate taste. Made with milk, cream,
                 sugar and natural stabilizer
               </p>
-              <button type="button" class="card__button button button--arrow">
+              <button type="button" class="card__button">
                 <svg class="card__button-icon" width="40" height="16">
                   <use href="./images/icons.svg#arrow"></use>
                 </svg>
@@ -214,15 +218,15 @@
             </form>
             </div> -->
           </li>
-          <li class="products__card coffe">
-            <div class="products__info products__info--coffe">
+          <li class="products__card">
+            <div class="products__info">
               <h3 class="card__title">ice coffee</h3>
               <p class="card__text">
                 Fragrant invigorating drink created from 100% natural
                 ingredients without the use of preservatives and flavor
                 enhancers
               </p>
-              <button type="button" class="card__button button button--arrow">
+              <button type="button" class="card__button">
                 <svg class="card__button-icon" width="40" height="16">
                   <use href="./images/icons.svg#arrow"></use>
                 </svg>
@@ -230,14 +234,14 @@
             </div>
             <!-- Кнопка зі стрілкою внизу картки повинна відкривати докладний опис продукту (реалізація модального вікна не є обов'язковим завданням). -->
           </li>
-          <li class="products__card milkshake">
-            <div class="products__info products__info--milkshake">
+          <li class="products__card">
+            <div class="products__info">
               <h3 class="card__title">milkshakes</h3>
               <p class="card__text">
                 Sweet drinks based on milk and ice cream, supplemented with
                 syrups, fruits, berries and other sweets of your choice
               </p>
-              <button type="button" class="card__button button button--arrow">
+              <button type="button" class="card__button">
                 <svg class="card__button-icon" width="40" height="16">
                   <use href="./images/icons.svg#arrow"></use>
                 </svg>
@@ -246,28 +250,33 @@
             <!-- Кнопка зі стрілкою внизу картки повинна відкривати докладний опис продукту (реалізація модального вікна не є обов'язковим завданням). -->
           </li>
         </ul>
+        </div>
       </section>
 
-      <section id="about" class="conteiner about">
+      <section id="about" class="about">
           <!-- About -->
+          <div class="conteiner about__conteiner">
           <label class="about__label">tradition and love</label>
           <h2 class="about__title">how it's made?</h2>
-          <img
+          <div class="img__cover">
+            <img
             class="about__img"
             srcset="
-              ./images/cow-280.png    280w,
+              ./images/cow-279.png    279w,
               ./images/cow-330.png    330w,
-              ./images/cow-491.png    491w,
-              ./images/cow-280@2x.png 560w,
+              ./images/cow-490.png    490w,
+              ./images/cow-279@2x.png 558w,
               ./images/cow-330@2x.png 660w,
-              ./images/cow-491@2x.png 982w
+              ./images/cow-490@2x.png 980w
             "
-            sizes="(min-width: 1200px) 491px, (min-width: 768px) 330px, (max-width: 767px) 280px, 100vw"
-            src="./images/cow-280.png"
+            sizes="(min-width: 1200px) 490px, (min-width: 768px) 330px, (max-width: 767px) 279px, 100vw"
+            src="./images/cow-279.png"
             alt="A big gray cow"
           />
+          </div>
+          
           <ul class="about__info">
-            <li class="about__text about__text--big-line-height">
+            <li class="about__text">
               Ice is a place where you will become not only a little happier,
               but also healthier. Health is the main value for us, and we follow
               it when creating our handmade desserts.
@@ -299,27 +308,29 @@
            <p class="about-technology__info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et Lorem ipsum dolor sit amet, 
             consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
         </div> -->
+        </div>
       </section>
 
-        <section class="conteiner advantages">
+        <section class="advantages">
           <!-- Advantages -->
+          <div class="conteiner advantages__conteiner">
           <!-- Сховати заголовок -->
           <h2 class="title title--hidden">Advantages</h2>
           <!-- Перелік переваг необхідно реалізувати як сітку елементів. Іконки переваг - у форматі png, їх необхідно реалізувати псевдо-елементами. -->
           <ul class="advantages__list">
-            <li class="advantages__item advantages__item--cow">
+            <li class="advantages__item">
               <p class="advantages__number">721</p>
               <p class="advantages__text">
                 Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
               </p>
             </li>
-            <li class="advantages__item advantages__item--weight">
+            <li class="advantages__item">
               <p class="advantages__number">16kg</p>
               <p class="advantages__text">
                 Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
               </p>
             </li>
-            <li class="advantages__item advantages__item--icecream">
+            <li class="advantages__item">
               <p class="advantages__number">84</p>
               <p class="advantages__text">
                 Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
@@ -388,7 +399,8 @@
         </div>
       </section>
 
-      <section class="conteiner reviews">
+      <section class="reviews">
+      <div class="conteiner reviews__conteiner">
        <h2 class="title title--hidden">Customer Reviews</h2>
        <div class="swiper">
         <div class="swiper-wrapper">
@@ -427,8 +439,9 @@
       </div>
       </section>
 
-      <section id="contacts" class="conteiner contacts">
+      <section id="contacts" class="contacts">
         <!-- Contacts -->
+        <div class="conteiner contacts__conteiner">
         <!-- Заголовок приховати -->
         <h2 class="title title--hidden">Contacts</h2>
         <!-- У секції міститься список адрес представництв компанії. Його необхідно реалізувати як сітку елементів -->
@@ -560,6 +573,7 @@
                 <button class="form__button" type="submit">Submit</button>
             </form>
         </div> -->
+        </div>
       </section>
     </main>
 

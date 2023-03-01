@@ -1,5 +1,5 @@
 .button {
-    display: inline-flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     height: 42px;
@@ -28,20 +28,19 @@
     background-color: $color-logo;
 }
 
-.button__menu {
+.button__mobile-menu {
     display: block;
     margin: 0 auto;
-    margin-top: 110px;
+    margin-top: 110px; 
 
     @media screen and (min-width: 768px) {
         display: none;
     }
 }
 
-.button__header {
+.button__menu {
     @media screen and (max-width: 767px) {
-        display: none;
+         display: none;
     }
-
 }
 

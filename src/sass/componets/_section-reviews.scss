@@ -1,4 +1,4 @@
-.reviews {
+.reviews__conteiner {
     box-sizing: border-box;
     position: relative;
     min-width: 320px;
@@ -9,6 +9,11 @@
     @media screen and (min-width: 480px) {
         height: 1110px;
         padding-top: 235px;
+    }
+
+    @media screen and (min-width: 768px) {
+        height: 1017px;
+        padding-top: 283px;
     }
 }
 

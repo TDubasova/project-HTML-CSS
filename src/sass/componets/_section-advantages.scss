@@ -1,4 +1,4 @@
-.advantages {
+.advantages__conteiner {
     box-sizing: border-box;
     min-width: 320px;
     padding-top: 50px;
@@ -12,18 +12,22 @@
 .advantages__list {
     margin: 0 auto;
     text-align: center;
-    
-    @media screen and (min-width: 480px) {
-        display: flex;
+    display: flex;
+
+    @media screen and (max-width: 767px)  {
         flex-direction: column;
         gap: 32px;
+    }
+
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
     }
 }
 
 .advantages__item {
 
     margin: 0 auto;
-
+    
     &:not(:last-child) {
         @media screen and (max-width: 379px) {
             margin-bottom: 28px;
@@ -32,6 +36,11 @@
 
     @media screen and (min-width: 480px) {
         width: 230px;
+    }
+
+    @media screen and (min-width: 768px) {
+        flex-basis: calc((100% - 6 * 40px) / 3);
+        height: 241px;
     }
 }
 
@@ -44,15 +53,15 @@
     margin-bottom: 16px;
 }
 
-.advantages__item--cow::before {
+.advantages__item:first-child:before {
     background-image: url('../images/cow.png');
 }
 
-.advantages__item--weight::before {
+.advantages__item:nth-child(2):before {
     background-image: url('../images/weight.png');
 }
 
-.advantages__item--icecream::before {
+.advantages__item:last-child:before {
     background-image: url('../images/icecrema.png');
 }
 
@@ -60,17 +69,17 @@
 (-webkit-min-device-pixel-ratio: 2),
 (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
-    .advantages__item--cow::before {
+    .advantages__item:first-child:before {
         background-image: url('../images/cow@2x.png');
         background-size: cover;
     }
 
-    .advantages__item--weight::before {
+    .advantages__item:nth-child(2):before {
         background-image: url('../images/weight@2x.png');
         background-size: cover;
     }
 
-    .advantages__item--icecream::before {
+    .advantages__item:last-child:before {
         background-image: url('../images/icecrema@2x.png');
         background-size: cover;
     }
@@ -81,10 +90,19 @@
     font-size: 36px;
     text-transform: uppercase;
     margin-bottom: 16px;
+
+    @media screen and (min-width: 768px) {
+        font-size: 48px;
+        margin-bottom: 12px;
+    }
 }
 
 .advantages__text {
     font-weight: 400;
     font-size: 12px;
     line-height: 1.7;
+
+    @media screen and (min-width: 768px) {
+        font-size: 14px;
+    }
 }

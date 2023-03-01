@@ -43,6 +43,7 @@ hr {
 }
 
 .conteiner {
+    box-sizing: border-box;
     padding-right: 20px;
     padding-left: 20px;
     border: 1px solid tomato;
@@ -52,8 +53,8 @@ hr {
 
     @media screen and (min-width: 480px) {
         width: 480px;
-        // margin-left: auto;
-        // margin-right: auto;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     @media screen and (min-width: 768px) {

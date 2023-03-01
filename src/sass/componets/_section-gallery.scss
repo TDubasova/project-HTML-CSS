@@ -7,6 +7,10 @@
     @media screen and (min-width: 480px) {
         height: 81px;
     }
+
+    @media screen and (min-width: 768px) {
+        height: 204px;
+    }
 }
 
 .gallery__slideshow {
@@ -18,12 +22,18 @@
     overflow: hidden;
     z-index: 99;
     width: calc(100% - 40px);
-    overflow: hidden;
     height: 130px;
     border-radius: 8px;
 
     @media screen and (min-width: 480px) {
         height: 204px;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: calc(100% - 64px);
+        height: 327px;
+        top: 60px;
+        left: 32px;
     }
     
 }
@@ -32,7 +42,7 @@
     position: absolute;
     width: 100%;
     z-index: 99;
-    opacity: 0;
+    // opacity: 0;
     border-radius: 8px;
     animation: slideanim 30s infinite;
 }
@@ -46,6 +56,10 @@
 
     @media screen and (min-width: 480px) {
             height: 204px;
+    }
+
+    @media screen and (min-width: 768px) {
+        height: 327px;
     }
 }
 

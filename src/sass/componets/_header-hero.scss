@@ -1,29 +1,21 @@
 .header-hero {
     box-sizing: border-box;
     min-width: 320px;
-    position: relative;
-    height: 520px;
     margin: 0 auto;
-
-    @media screen and (min-width: 480px) {
-        height: 415px;
-    }
-
-    @media screen and (min-width: 1200px) {
-        height: 664px;
-    }
+    
 }
 
-.header {
+.header__menu {
+    margin: 0 auto;
     display: flex;
     box-sizing: border-box;
     justify-content: space-between;
     align-items: center;
-    position: relative;
 }
 
 .logo {
     width: 40px;
+    z-index: 99;
 
     @media screen and (min-width: 480px) {
         width: 48px;
@@ -37,14 +29,9 @@
 .navigation {
     display: block;
     margin: 0 auto;
-    padding-top: 100px;
     text-align: center;
 
-    @media screen and (min-width: 480px) {
-        padding-top: 104px;
-    }
-
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 1200px) {
         display: flex;
         width: 444px;
         justify-content: space-between;
@@ -53,6 +40,10 @@
 
 .navigation__item:not(:last-child) {
     margin-bottom: 32px;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 40px;
+    }
 }
 
 .header-menu__link {
@@ -75,23 +66,41 @@
 }
 
 .hero {
-    width: 100%;
-    height: max-content;
+    box-sizing: border-box;
+    min-width: 320px;
+    position: relative;
+    height: 453px;
+    margin: 0 auto;
+    color: $primery-text-color;
+
+   @media screen and (min-width: 480px) {
+    height: 357px;
+   }
+
+   @media screen and (min-width: 768px) {
+       height: 349px;
+   }
+
+   @media screen and (min-width: 1200px) {
+       height: 591px;
+   }
 }
 
 .hero__info {
-        margin-top: 50px;
+    padding-top: 50px;
     
     @media screen and (min-width: 480px) {
-        margin-top: 40px;
+        padding-top: 40px;
     }
     
     @media screen and (min-width: 768px) {
-        margin-top: 14px;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 14px;
     }
     
     @media screen and (min-width: 1200px) {
-        margin-top: 45px;
+        padding-top: 45px;
     }
 }
 
@@ -101,12 +110,12 @@
     font-weight: 400;
     font-size: 26px;
     line-height: 1.26;
-    letter-spacing: 0.04em;
     text-transform: uppercase;
-    color: $primery-text-color;
     margin-bottom: 32px;
     
     @media screen and (min-width: 768px) {
+        margin-bottom: 24px;
+        line-height: 1.25;
         margin-bottom: 24px;
     }
 
@@ -136,13 +145,9 @@
 .menu__link {
     font-weight: 600;
     font-size: 12px;
-    line-height: 1.2;
     color: $color-logo;
     text-decoration: underline;
 
-    &:not(:last-child) {
-        margin-right: 12px;
-    }
 }
 
 .menu__link:hover {
@@ -155,6 +160,8 @@
 
 .menu__link--btn {
     display: block;
+    width: 108px;
+    height: 38px;
     box-sizing: border-box;
     text-align: center;
     text-decoration: none;
@@ -170,17 +177,20 @@
 }
 
 .info__list {
-    opacity: 0;
+    display: none;
 
     @media screen and (min-width: 768px) {
-        opacity: 1;
+        display: block;
+        margin-top: 14px;
         text-align: end;
     }
 }
 
 .info__item{
-    &:not(:first-child) {
-        margin-bottom: 16px;
+    height: 48px;
+
+    &:not(:last-child) {
+        margin-bottom: 20px;
     }
 }
 
@@ -191,16 +201,14 @@
 
     @media screen and (min-width: 1200px) {
         font-size: 14px;
-        line-height: 1.2;
-        letter-spacing: 0.04em;
+    
     }    
 }
 
 .info__txt--bold {
     font-weight: 900;
     font-size: 28px;
-    line-height: 1.2;
-    letter-spacing: 0.04em;
+    color: #131313;
 
     @media screen and (min-width: 1200px) {
         font-size: 48px;
@@ -214,7 +222,7 @@
         display: block;
         width: 139px;
         margin-top: 39px;
-        margin-left: 216px;
+        margin-left: 184px;
     }
 
     @media screen and (min-width: 1200px) {
@@ -225,7 +233,6 @@
 }
 
 .feature__text {
-    color: $primery-text-color;
     font-weight: 400;
     font-size: 12px;
     line-height: 1.4;

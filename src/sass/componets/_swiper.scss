@@ -2,6 +2,11 @@
     position: relative;
     width: 280px;
     height: 466px;
+
+    @media screen and (min-width: 768px) {
+        width: 705px;
+        height: 355px;
+    }
 }
 
 .swiper-slide__img {
@@ -21,16 +26,33 @@
     background-color: $primery-color;
     color: $primery-text-color;
     border-radius: 10px;
+    font-weight: 400;
     font-size: 12px; 
     line-height: 2.55;
     text-align: center;
+
+    @media screen and (min-width: 768px) {
+        height: 138px;
+        padding: 28px 80px 29px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.86;
+        letter-spacing: 0.04em;
+    }
 }
 
 .swiper-slide__info {
+    font-weight: 500;
     font-size: 20px;
     line-height: 1.85; 
     text-align: center;
     margin-bottom: 12px;
+
+    @media screen and (min-width: 768px) {
+        font-size: 16px;
+        line-height: 1.86;
+        margin-bottom: 32px;
+    }
 }
 
 
@@ -43,6 +65,10 @@
     width: 72px;
     height: 12px;
     bottom: 0;    
+
+    @media screen and (min-width: 768px) {
+        left: 316px;
+    }
 }
 
 
