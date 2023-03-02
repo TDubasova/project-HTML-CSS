@@ -4,23 +4,65 @@
 
 .footer__conteiner {
     box-sizing: border-box;
-    padding-top: 60px;
     color: $primery-text-color;
+
 }
+
+.footer__main {
+    padding-top: 60px;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 40px;
+    }
+}
+
+.footer__owerlay {
+    @media screen and (min-width: 768px) {
+         display: inline-flex;
+        flex-direction: column;
+    }
+   
+}
+
+.footer__owerlay:nth-child(2) {
+    @media screen and (min-width: 768px) {
+        align-items: flex-end;
+    }
+}
+
 
 .footer__title {
     width: 234px;
     font-weight: 700;
     font-size: 18px;
-    line-height: 1;
-    margin-bottom: 16px;
+    
+    @media  screen and (max-width: 767px) {
+        line-height: 1;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 352px;
+        font-size: 26px;
+    }
 }
+
 
 .footer__big-title {
     width: 234px;
+    margin-top: 16px;
     font-weight: 700;
     font-size: 34px;
-    line-height: 1;
+
+    @media screen and (max-width: 767px) {
+            line-height: 1;
+        }
+
+    @media screen and (min-width: 768px) {
+        font-size: 48px;
+        letter-spacing: 0.05em;
+    }
 }
 
 .footer__social-list {
@@ -30,11 +72,19 @@
     width: 142px;
     height: 34px;
     margin-top: 60px;
-    margin-left: 138px;
-    margin-bottom: 20px;
-    
-    @media screen and (min-width: 480px) {
+
+    @media screen and (max-width: 479px) {
+        margin-left: 138px;   
+    }
+
+    @media screen and (max-width: 767px) {
+        margin-bottom: 20px;
         margin-left: 298px;
+    }
+
+    @media screen and (min-width: 768px) {
+        margin-top: 61px;
+        margin-bottom: 34px;
     }
 }
 
@@ -58,26 +108,44 @@
 }
 
 .footer__comunication {
-    margin-bottom: 40px;
     text-align: end;
     font-weight: 700;
     font-size: 12px;
     line-height: 1.86;
     color: #131313;
+
+    @media screen and (max-width: 767px) {
+        margin-bottom: 40px;
+    }
+
+    @media screen and (min-width: 768px) {
+        display: block;
+        width: 285px;
+        font-size: 14px;
+    }
 }
 
 .footer__comunication a {
     color: #FCFCFC;
+
+    @media screen and (min-width: 768px) {
+        display: inline-block;
+    }
 }
 
 .footer__copyright {
     box-sizing: border-box;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 20px 0px 20px;
     text-align: center;
 
     @media screen and (min-width: 480px) {
         padding-bottom: 24px;
+    }
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        justify-content: space-between;
+        padding: 12px 203px;
     }
 }
 

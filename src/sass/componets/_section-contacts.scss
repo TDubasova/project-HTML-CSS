@@ -122,17 +122,29 @@
 .contacts__border {
     width: 216px;
     margin-left: 0;
+
+    @media screen and (min-width: 768px) {
+        width: 176px;
+        text-align: center;
+    }
 }
 
 .contacts__timetable {
-    margin-top: 24px;
-    margin-bottom: 24px;
+    margin: 24px 0px 24px;
+
+    @media screen and (min-width: 768px) {
+        margin: 32px 0px 32px;
+    }
 }
 
 .timetable__item {
     font-weight: 500;
     font-size: 12px;
     line-height: 1.86;
+
+    @media screen and (min-width: 768px) {
+        font-size: 14px;
+    }
 }
 
 .timetable__item span {
@@ -148,6 +160,12 @@
     font-weight: 500;
     font-size: 12px;
     line-height: 1.6;
+
+    @media screen and (min-width: 768px) {
+        margin-top: 32px;
+        font-size: 14px;
+        line-height: 1.5;
+    }
 }
 
 .contacts__communication a {

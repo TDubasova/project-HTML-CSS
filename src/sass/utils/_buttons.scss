@@ -13,6 +13,7 @@
 
 .button:hover,
 .button:focus {
+    cursor: url(../images/svg/cursor.svg), pointer;
     background-color: $button-hover;
 }
 

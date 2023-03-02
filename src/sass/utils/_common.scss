@@ -3,6 +3,7 @@ body {
     box-sizing: border-box;
     margin: 0 auto;
     line-height: 1.2;
+    cursor: url(../images/svg/cursor.svg), pointer;
     
 }
 
@@ -13,7 +14,7 @@ img {
 }
 a {
     text-decoration: none;
-    cursor: pointer;
+    cursor: url(../images/svg/cursor.svg), pointer;
 }
 
 ul {

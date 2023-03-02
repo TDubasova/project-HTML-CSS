@@ -17,6 +17,11 @@
    @media screen and (min-width: 768px) {
     font-size: 22px;
    }
+
+   @media screen and (min-width: 1200px) {
+    font-size: 30px;
+    letter-spacing: 0.04em;
+   }
 }
 
 .products__title {
@@ -35,7 +40,14 @@
     @media screen and (min-width: 768px) {
         margin-bottom: 80px;
         font-size: 34px;
-        line-height: 1.26;
+        line-height: 1.25;
+        letter-spacing: 0.04em;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 120px;
+        font-size: 36px;
+        letter-spacing: 0.06em;
     }
 }
 
@@ -53,6 +65,10 @@
         display: flex;
         width: 704px;
     } 
+
+    @media screen and (min-width: 1200px) {
+        width: 1168px;
+    }
 }
 
 .products__card {
@@ -61,8 +77,8 @@
     padding-top: 123px;
     width: 280px;
     height: 528px;
-
-    @media screen and (min-width: 480px) {
+    
+    @media screen and (min-width: 480px) and (max-width: 767px) {
         width: 320px;
         height: 536px;
     }
@@ -70,6 +86,12 @@
     @media screen and (min-width: 768px) {
         flex-basis: calc((100% - 4 * 8px) / 3);
         height: 548px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        flex-basis: calc((100% - 2 * 29px) / 3);
+        height: 719px;
+        padding-top: 183px;
     }
 }
 
@@ -82,6 +104,9 @@
         margin-right: 16px;
     }
 
+    @media screen and (min-width: 1200px) {
+        margin-right: 29px;
+    }
 }
 
 .products__card::before {
@@ -104,12 +129,18 @@
         left: 12px;
         height: 212px;
     }
+
+    @media screen and (min-width: 1200px) {
+        left: 34px;
+        width: 302px;
+        height: 318px;
+    }
 }
 
 .products__card:first-child::before {
     background-image: url('../images/ice_cream-200.png');
-        box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
-        box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
+    box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+    box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
            
 }
 
@@ -162,6 +193,12 @@
         padding-top: 108px;
         padding-bottom: 12px;
     }
+
+    @media screen and (min-width: 1200px) {
+        height: 536px;
+        padding-top: 165px;
+        padding-bottom: 60px;
+    }
 }
 
 .products__card:first-child .products__info {
@@ -181,11 +218,17 @@
     margin-bottom: 40px;
     font-weight: 700;
     font-size: 20px;
+    letter-spacing: 0.04em;
     text-align: center;
     text-transform: uppercase;
 
     @media screen and (min-width: 768px) {
         font-size: 22px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 66px;
+        font-size: 30px;
     }
 }
 
@@ -206,7 +249,11 @@
 
     @media screen and (min-width: 768px) {
         width: 172px;
-        height: 225px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 246px;
+        font-size: 16px;
     }
 }
 
