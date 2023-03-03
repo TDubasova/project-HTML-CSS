@@ -10,6 +10,10 @@
         display: flex;
         justify-content: center;
     }
+
+    @media screen and (min-width: 1200px) {
+        height: 516px;
+    }
 }
 
 .contacts__list {
@@ -30,6 +34,12 @@
         width: 704px;
         display: flex;
     }
+
+    @media screen and (min-width: 1200px) {
+        width: 1168px;
+        top: -128px;
+        left: 16px;
+    }
 }
 
 .contacts__item {
@@ -46,14 +56,14 @@
         height: 537px;
         padding-left: 24px;
         padding-top: 44px;
-        
     }
-}
 
-.contacts__item:not(:first-child) {
-    @media screen and (min-width: 768px) {
-            margin-left: 8px;
-        }
+    @media screen and (min-width: 1200px) {
+        width: 368px;
+        height: 542px;
+        padding-top: 40px;
+        padding-left: 40px;
+    }
 }
 
 .contacts__item:not(:last-child) {
@@ -62,7 +72,11 @@
     }
 
     @media screen and (min-width: 768px) {
-        margin-right: 8px;
+        margin-right: 16px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-right: 32px;
     }
     
 }
@@ -88,35 +102,49 @@
         font-size: 16px;
         line-height: 1.4;
     }
+
+    @media screen and (min-width: 1200px) {
+        padding: 4px 14px;
+    }
 }
 
 .contacts__town {
     font-weight: 500;
     font-size: 12px;
+    line-height: 1.86;
+    letter-spacing: 0.04em;
     margin-bottom: 8px;
 
     @media screen and (min-width: 768px) {
         font-size: 14px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 16px;
     }
 }
 
 .contacts__adress {
     display: block;
     box-sizing: border-box;
-    width: 212px;
     height: 40px;
     margin-bottom: 24px;
     font-weight: 500;
     font-size: 12px;
     line-height: 1.83;
+    letter-spacing: 0.04em;
     color: rgba(214, 147, 109, 1);
 
     @media screen and (min-width: 768px) {
-        width: 173px;
         height: 71px;
+        margin-bottom: 32px;
         font-size: 14px;
-        letter-spacing: 0.04em;
     }
+
+    @media screen and (min-width: 1200px) {
+        height: 50px;
+        font-size: 16px;
+    }     
 }
 
 .contacts__border {
@@ -126,6 +154,10 @@
     @media screen and (min-width: 768px) {
         width: 176px;
         text-align: center;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 288px;
     }
 }
 
@@ -145,6 +177,11 @@
     @media screen and (min-width: 768px) {
         font-size: 14px;
     }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 16px;
+        letter-spacing: 0.04em;
+    }
 }
 
 .timetable__item span {
@@ -153,6 +190,10 @@
 
 .timetable__item:not(:last-child) {
     margin-bottom: 8px;
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 12px;
+    }
 }
 
 .contacts__communication {
@@ -166,6 +207,10 @@
         font-size: 14px;
         line-height: 1.5;
     }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 16px;
+    }
 }
 
 .contacts__communication a {
@@ -174,10 +219,13 @@
 
 .contacts__communication > li:not(:last-child) {
     margin-bottom: 6px;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 4px;
+    }
 }
 
 .contacts__button {
-    
     width: 196px;
     border: none;
     font-weight: 600;
@@ -191,6 +239,10 @@
     @media screen and (min-width: 768px) {
             margin-top: 278px;
         }
+    
+    @media screen and (min-width: 1200px) {
+        margin-top: 474px;
+    }
 
 }
 
@@ -203,6 +255,5 @@
 
     @media screen and (min-width: 768px) {
         margin-right: 16px;
-    }
-   
+    }   
 }
