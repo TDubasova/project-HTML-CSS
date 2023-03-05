@@ -1,7 +1,10 @@
 .gallery {
+    min-width: 320px;
+}
+
+.gallery__conteiner {
     box-sizing: border-box;
     position: relative;
-    min-width: 320px;
     height: 73px;
 
     @media screen and (min-width: 480px) {

@@ -1,3 +1,7 @@
+.products {
+    min-width: 320px
+}
+
 .products__conteiner {
     box-sizing: border-box;
     min-width: 320px;
@@ -266,6 +270,10 @@
 
 .card__button-icon {
     fill: #131313;
+}
+
+.card__button:hover {
+    cursor: url(../images/svg/cursor.svg), pointer;
 }
 
 

@@ -1,0 +1,136 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    opacity: 1;
+    visibility: visible;
+    transition: $opacity, $visibility;
+    z-index: 999;
+    overflow-y: scroll;
+
+    &.is-hidden {
+        opacity: 0;
+        pointer-events: none;
+        visibility: hidden;
+        transition: $opacity, $visibility;
+    }
+}
+
+.modal__window {
+    width: 100vw;
+    background-color: $primery-text-color;
+    color: #131313;
+    border-radius: 10px;
+    padding-top: 28px;
+
+    @media screen and (min-width: 480px) {
+        width: 280px;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 568px;
+        padding-top: 32px;
+    }
+}
+
+.modal__button-close {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    background-color: inherit;
+    border: none;
+}
+
+.modal__button-icon {
+    width: 20px;
+    height: 20px;
+
+    @media screen and (min-width: 768px) {
+        width: 22px;
+        height: 22px;
+    }
+}
+
+.modal__button-icon:hover {
+    cursor: url(../images/svg/cursor.svg), pointer;
+}
+
+.modal__icon-close {
+    fill: #131313;
+}
+
+.modal__title {
+    text-align: center;
+    font-family: Seymour One;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.1;
+}
+
+.modal__form {
+    width: 224px;
+    margin: 0 auto;
+
+    @media screen and (min-width: 768px) {
+        width: 368px;
+    }
+}
+
+.modal__input {
+    box-sizing: border-box;
+    height: 32px;
+    width: 100%;
+    padding: 0;
+    padding-left: 10px;
+    border: 1px solid #84A178;
+    border-radius: 10px;
+
+    @media screen and (min-width: 768px) {
+        height: 42px;
+        padding-left: 16px;
+    }
+}
+
+.modal__textarea {
+    box-sizing: border-box;
+    height: 65px;
+    width: 100%;
+    padding: 0;
+    padding-top: 8px;
+    padding-left: 10px;
+    border: 1px solid #84A178;
+    border-radius: 10px;
+
+    @media screen and (min-width: 768px) {
+        height: 84px;
+        padding-top: 11px;
+        padding-left: 16px;
+
+    }
+}
+
+.modal__button-submit {
+    display: block;
+    margin: 0 auto;
+    width: 114px;
+    height: 42px;
+    background-color: $color-logo;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1;
+    cursor: url(../images/svg/cursor.svg), pointer;
+
+    @media screen and (min-width: 768px) {
+        width: 121px;
+        height: 42px;
+    }
+}

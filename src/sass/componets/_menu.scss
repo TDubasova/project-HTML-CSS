@@ -19,7 +19,7 @@
     background-color: $primery-color;
     box-sizing: border-box;
     position: fixed;
-    z-index: 3;
+    z-index: 5;
     width: 100vw;
     height: 100vh;
     top: 0;
@@ -34,8 +34,11 @@
     
     @media screen and (min-width: 768px) {
         padding-top: 140px;
+    }    
+
+    @media screen and (min-width: 1200px) {
+        display: none;
     }
-    
 }
 
 .mobile-menu.is-open {
@@ -49,7 +52,7 @@
 .mobile-menu__close {
     position: fixed;
     top: 16px;
-    right: 20px;
+    right: calc((100% - 268px) / 2);
     display: inline-flex;
     align-items: center;
     margin: 0;
@@ -59,11 +62,12 @@
 
     @media screen and (min-width: 480px) {
         top: 20px;
+        right: calc((100% - 440px) / 2);
     }
 
     @media screen and (min-width: 768px) {
         top: 32px;
-        right: 32px;
+        right: calc((100% - 704px) / 2);
     }
 }
 

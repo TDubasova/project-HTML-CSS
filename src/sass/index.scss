@@ -9,8 +9,11 @@
 @import './componets/section-advantages';
 @import './componets/section-gallery';
 @import './componets/section-reviews';
-@import './componets/swiper';
 @import '../../node_modules/swiper/swiper';
+@import '../../node_modules/swiper/modules/pagination/pagination';
+@import './componets/swiper';
 @import './componets/section-contacts';
 @import './componets/footer';
+@import './componets/modal-global';
+@import './componets/modal-buyNow';
 

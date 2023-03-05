@@ -1,14 +1,13 @@
-.header__menu,
-.hero, 
-.about__conteiner,
-.advantages__conteiner,
+.header-hero,
+.about,
+.advantages,
 .gallery,
-.contacts__conteiner,
-.footer__conteiner {
+.contacts,
+.footer {
     background-color: $primery-color;
 }
 
-.products__conteiner {
+.products {
     background-color: white;
     background-image: url('../images/background_image/background_prod_mob@1x.png');
     background-size: contain;
@@ -23,12 +22,13 @@
     
     @media screen and (min-width: 768px) {
         background-image: url('../images/background_image/bacground_tablet@1x.png');
-        background-size: contain;
+        background-size: cover;
         background-position: center;
     }
     
     @media screen and (min-width: 1200px) {
         background-image: url('../images/background_image/bacground_desktop@1x.png');
+        background-size: cover;
     }
 }
 
@@ -36,7 +36,7 @@
 (-webkit-min-device-pixel-ratio: 2),
 (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
-    .products__conteiner {
+    .products {
         background-image: url('../images/background_image/background_prod_mob@2x.png');
         background-size: contain;
         background-repeat: repeat-y;

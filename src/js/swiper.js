@@ -1,6 +1,7 @@
 import Swiper, { Pagination } from 'swiper';
 
 const swiper = new Swiper('.swiper', {
+  effect: 'fade',
   modules: [Pagination],
   pagination: {
     el: '.swiper-pagination',
@@ -13,4 +14,4 @@ const swiper = new Swiper('.swiper', {
 });
 
 
-swiper.pagination.init();
+swiper.init();

@@ -1,3 +1,7 @@
+.advantages {
+    min-width: 320px;
+}
+
 .advantages__conteiner {
     box-sizing: border-box;
     padding-top: 50px;
@@ -31,15 +35,12 @@
 
 .advantages__item {
     margin: 0 auto;
-    
+     width: 230px;
+
     &:not(:last-child) {
         @media screen and (max-width: 379px) {
             margin-bottom: 28px;
         }
-    }
-
-    @media screen and (min-width: 480px) {
-        width: 230px;
     }
 
     @media screen and (min-width: 768px) {

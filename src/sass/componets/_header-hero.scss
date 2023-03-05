@@ -6,10 +6,12 @@
 }
 
 .header__menu {
+    height: 68px;
     margin: 0 auto;
     display: flex;
     box-sizing: border-box;
     justify-content: space-between;
+    align-items: center;
 
     @media screen and (min-width: 1200px) {
         height: 65px;
@@ -19,14 +21,17 @@
 
 .logo {
     width: 40px;
-    z-index: 5;
+    height: 37px;
+    z-index: 6;
 
     @media screen and (min-width: 480px) {
         width: 48px;
+        height: 44px;
     }
 
     @media screen and (min-width: 1200px) {
         width: 60px;
+        height: 65px;
     }
 }
 
@@ -99,6 +104,14 @@
     }
 }
 
+.info__menu {
+    @media screen and (min-width: 1200px) {
+        position: relative;
+        width: 367px;
+        height: 214px;
+    }
+}
+
 .hero__title {
     width: 247px;
     font-family: 'Seymour One';
@@ -153,15 +166,14 @@
         font-size: 14px;
         line-height: 1.28;
     }
-
-}
-
-.menu__link:hover {
-    color: $button-hover;
 }
 
 .menu__link:focus {
     color: $primery-text-color;
+}
+
+.menu__link--text:hover {
+    color: $button-hover;
 }
 
 .menu__link--btn {
@@ -186,6 +198,7 @@
 .menu__link--btn:focus {
     border: 2px solid $button-hover;
 }
+
 
 .info__list {
     display: none;
@@ -275,12 +288,14 @@
     fill: $primery-text-color;
 }
 
+
 .hero__img--points {
     position: absolute;
     width: 320px;
     height: 49px;
     right: 0;
     bottom: 0;
+    pointer-events: none;
 
     @media screen and (min-width: 480px) {
         width: 321px;

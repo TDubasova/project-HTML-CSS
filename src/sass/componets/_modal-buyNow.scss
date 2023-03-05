@@ -1,0 +1,157 @@
+.modal-buyNow {
+    position: absolute;
+    margin: 0 auto;
+    top: 0;
+    height: 991px;
+    transform: translate(0%, 0%) scale(1);
+    transition: $transform;
+
+    @media screen and (min-width: 480px) {
+        left: calc((100% - 280px) / 2);
+    }
+
+    @media screen and (min-width: 768px) {
+        top: 0;
+        left: calc((100% - 568px) / 2);
+        height: 644px;
+    }
+
+    .backdrop.is-hidden & {
+        transform: translate(0%, 0%) scale(0.9);
+        transition: $transform;
+    }
+}
+
+.modal__icon {
+    fill: #131313;
+}
+
+.modal-buyNow__title {
+    margin-bottom: 20px;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 40px;
+    }
+}
+
+.modal-buyNow__products-set {
+    width: 132px;
+    margin: 0 auto;
+    margin-bottom: 32px;
+
+    @media screen  and (min-width: 768px) {
+        display: flex;
+        justify-content: space-between;
+        width: 460px;
+        margin-bottom: 40px;
+    }
+}
+
+.modal-buyNow__products-card {
+    display: block;
+    position: relative;
+    box-sizing: border-box;
+    height: 199px;
+    padding-top: 63px;
+
+    @media screen and (min-width: 768px) {
+        height: 198px;
+        flex-basis: calc((100% - 4 * 16px) / 3);;
+    }
+}
+
+.modal-buyNow__products-card:not(:last-child) {
+    @media screen and (max-width: 767px) {
+        margin-bottom: 20px;
+    } 
+}
+
+.modal-buyNow__products-info {
+    box-sizing: border-box;
+    height: 135px;
+    padding-top: 95px;
+    background-color: inherit;
+    border-radius: 15px;
+}
+
+.modal-buyNow__products-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 132px;
+    height: 139px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+}
+
+.modal-buyNow__products-card:first-child::before {
+    background-image: url('../images/ice-cream_modal_buyNow-132.png');
+    box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+    box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
+
+}
+
+.modal-buyNow__products-card:nth-child(2)::before {
+    background-image: url('../images/coffe_modal_buyNow-132.png');
+    box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
+}
+
+.modal-buyNow__products-card:last-child::before {
+    background-image: url('../images/milkshake_modal_buyNow-132.png');
+    box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);
+}
+
+@media (min-device-pixel-ratio: 2),
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+
+    .modal-buyNow__products-card:first-child::before {
+        @media screen and (max-width: 1199px) {
+            background-image: url('../images/ice-cream_modal_buyNow-132@2x.png');
+        }
+    }
+
+    .modal-buyNow__products-card:nth-child(2)::before {
+        @media screen and (max-width: 1199px) {
+            background-image: url('../images/coffe_modal_buyNow-132@2x.png');
+        }
+    }
+
+    .modal-buyNow__products-card:last-child::before {
+        @media screen and (max-width: 1199px) {
+            background-image: url('../images/milkshake_modal_buyNow-132@2x.png');
+        }
+    }
+}
+
+.modal-buyNow__products-card:first-child .modal-buyNow__products-info {
+    border: 2px solid #96AF8C;
+}
+
+.modal-buyNow__products-card:nth-child(2) .modal-buyNow__products-info {
+    background-color: $product-cart-color2;
+}
+
+.modal-buyNow__products-card:last-child .modal-buyNow__products-info {
+    border: 2px solid $product-cart-color3;
+}
+
+.modal-buyNow__products-title {
+    text-align: center;
+    font-weight: 700px;
+    font-size: 16px;
+    line-height: 1;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.modal-buyNow__input {
+    margin-bottom: 12px;
+}
+
+.modal-buyNow__textarea {
+    margin-bottom: 26px;
+}
