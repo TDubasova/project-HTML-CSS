@@ -1,17 +1,13 @@
 .modal-buyNow {
     position: absolute;
     margin: 0 auto;
-    top: 0;
+    top: 1%;
+    left: calc((100% - 280px) / 2);
     height: 991px;
     transform: translate(0%, 0%) scale(1);
     transition: $transform;
 
-    @media screen and (min-width: 480px) {
-        left: calc((100% - 280px) / 2);
-    }
-
     @media screen and (min-width: 768px) {
-        top: 0;
         left: calc((100% - 568px) / 2);
         height: 644px;
     }
@@ -88,6 +84,7 @@
 
 .modal-buyNow__products-card:first-child::before {
     background-image: url('../images/ice-cream_modal_buyNow-132.png');
+    background-color: rgba(156, 190, 143, 0.7);
     box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
     box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
 
@@ -100,6 +97,7 @@
 
 .modal-buyNow__products-card:last-child::before {
     background-image: url('../images/milkshake_modal_buyNow-132.png');
+    background-color: rgba(213, 117, 63, 0.7);
     box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);
 }
 

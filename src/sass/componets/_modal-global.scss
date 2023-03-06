@@ -20,15 +20,12 @@
 }
 
 .modal__window {
-    width: 100vw;
+    box-sizing: border-box;
+    width: 280px;
     background-color: $primery-text-color;
     color: #131313;
     border-radius: 10px;
     padding-top: 28px;
-
-    @media screen and (min-width: 480px) {
-        width: 280px;
-    }
 
     @media screen and (min-width: 768px) {
         width: 568px;
@@ -70,8 +67,14 @@
     text-align: center;
     font-family: Seymour One;
     font-weight: 400;
-    font-size: 20px;
-    line-height: 1.1;
+    font-size: 16px;
+    line-height: 1.19;
+
+    @media screen and (min-width: 768px) {
+        font-size: 20px;
+        line-height: 1.1;
+    }
+    
 }
 
 .modal__form {
@@ -81,6 +84,18 @@
     @media screen and (min-width: 768px) {
         width: 368px;
     }
+}
+
+.modal__input:placeholder-shown,
+.modal__textarea:placeholder-shown {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.4;
+
+    @media screen and (min-width: 768px) {
+        font-size: 14px;
+    }
+    
 }
 
 .modal__input {
@@ -120,7 +135,6 @@
     display: block;
     margin: 0 auto;
     width: 114px;
-    height: 42px;
     background-color: $color-logo;
     border: none;
     border-radius: 10px;
@@ -131,6 +145,5 @@
 
     @media screen and (min-width: 768px) {
         width: 121px;
-        height: 42px;
     }
 }

@@ -1,0 +1,73 @@
+.modal-readMore {
+    position: absolute;
+    margin: 0 auto;
+    top: 15%;
+    left: calc((100% - 280px) / 2);
+    height: 459px;
+    padding-left: 28px;
+    padding-right: 28px;
+    transform: translate(0%, 0%) scale(1);
+    transition: $transform;
+    
+    @media screen and (min-width: 768px) {
+        left: calc((100% - 568px) / 2);
+        height: 449px;
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+    
+    .backdrop.is-hidden & {
+        transform: translate(0%, 0%) scale(0.9);
+        transition: $transform;
+    }
+}
+
+.modal-readMore__title {
+    margin-bottom: 20px;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 32px;
+    }
+}
+
+.modal-readMore__wideo {
+    position: relative;
+    width: 224px;
+    height: 199px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color: #131313;
+
+    @media screen and (min-width: 768px) {
+        width: 448px;
+        height: 205px;
+    }
+}
+
+.modal-readMore__button-play {
+    position: absolute;
+    top: 81px;
+    left: 94px;
+    width: 36px;
+    height: 36px;
+    margin: 0 auto;
+    fill: $primery-text-color;
+
+    @media screen and (min-width: 768px) {
+        top: 84px;
+        left: 206px;
+    }
+}
+
+.modal-readMore__text {
+    width: 224px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.4;
+
+    @media screen and (min-width: 768px) {
+        width: 448px;
+        font-size: 16px;
+    }
+}

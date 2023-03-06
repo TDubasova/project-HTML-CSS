@@ -1,0 +1,67 @@
+.modal-location {
+    position: absolute;
+    margin: 0 auto;
+    top: 15%;
+    left: calc((100% - 280px) / 2);
+    height: 365px;
+    padding-left: 28px;
+    padding-right: 28px;
+    transform: translate(0%, 0%) scale(1);
+    transition: $transform;
+
+    @media screen and (min-width: 768px) {
+        left: calc((100% - 568px) / 2);
+        height: 458px;
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    .backdrop.is-hidden & {
+        transform: translate(0%, 0%) scale(0.9);
+        transition: $transform;
+    }
+}
+
+.modal-location__title {
+    margin-bottom: 20px;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 32px;
+    }
+}
+
+.modal-location_map {
+    width: 224px;
+    height: 199px;
+    border-radius: 10px;
+    margin-bottom: 24px;
+
+    @media screen and (min-width: 768px) {
+        width: 448px;
+        height: 260px;
+        margin-bottom: 32px;
+    }
+}
+
+.modal-location__button {
+    width: 134px;
+    margin: 0 auto;
+    
+    @media screen and (max-width: 767px) {
+        font-size: 12px;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 145px;
+    }
+}
+
+.modal-location__link {
+    display: block;
+    width: 100%;
+    color: #131313;
+}
+
+.modal-location__link:focus {
+    color: $primery-text-color;
+}

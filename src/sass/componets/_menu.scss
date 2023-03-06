@@ -19,7 +19,7 @@
     background-color: $primery-color;
     box-sizing: border-box;
     position: fixed;
-    z-index: 5;
+    z-index: 999;
     width: 100vw;
     height: 100vh;
     top: 0;
@@ -43,6 +43,7 @@
 
 .mobile-menu.is-open {
     transform: translateX(0);
+    position: absolute;
 }
 
 .icon__mobile-menu {
