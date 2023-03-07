@@ -5,21 +5,21 @@
     height: 42px;
     border-radius: 10px;
     border: none;
+
+    &:hover,
+    &:focus {
+        cursor: url(../images/svg/cursor.svg), pointer;
+        background-color: $button-hover;
+    }
+    
+    &:focus {
+        color: $primery-text-color;
+        fill: $primery-text-color;
+    }
 }
 
 .button__icon {
     margin-left: 4px;
-}
-
-.button:hover,
-.button:focus {
-    cursor: url(../images/svg/cursor.svg), pointer;
-    background-color: $button-hover;
-}
-
-.button:focus {
-    color: $primery-text-color;
-    fill: $primery-text-color;
 }
 
 .button--yellow {

@@ -54,13 +54,15 @@
         height: 198px;
         flex-basis: calc((100% - 4 * 16px) / 3);;
     }
+
+    &:not(:last-child) {
+         @media screen and (max-width: 767px) {
+            margin-bottom: 20px;
+        }
+    }
 }
 
-.modal-buyNow__products-card:not(:last-child) {
-    @media screen and (max-width: 767px) {
-        margin-bottom: 20px;
-    } 
-}
+
 
 .modal-buyNow__products-info {
     box-sizing: border-box;

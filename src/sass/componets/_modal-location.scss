@@ -30,7 +30,7 @@
     }
 }
 
-.modal-location_map {
+.modal-location__map {
     width: 224px;
     height: 199px;
     border-radius: 10px;
@@ -60,8 +60,9 @@
     display: block;
     width: 100%;
     color: #131313;
+
+    &:focus {
+        color: $primery-text-color;
+    }
 }
 
-.modal-location__link:focus {
-    color: $primery-text-color;
-}

@@ -53,11 +53,13 @@
         width: 22px;
         height: 22px;
     }
+
+    &:hover {
+        cursor: url(../images/svg/cursor.svg), pointer;
+    }
 }
 
-.modal__button-icon:hover {
-    cursor: url(../images/svg/cursor.svg), pointer;
-}
+
 
 .modal__icon-close {
     fill: #131313;
@@ -74,7 +76,6 @@
         font-size: 20px;
         line-height: 1.1;
     }
-    
 }
 
 .modal__form {
@@ -95,7 +96,6 @@
     @media screen and (min-width: 768px) {
         font-size: 14px;
     }
-    
 }
 
 .modal__input {

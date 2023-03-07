@@ -166,10 +166,10 @@
         font-size: 14px;
         line-height: 1.28;
     }
-}
 
-.menu__link:focus {
-    color: $primery-text-color;
+    &:focus {
+        color: $primery-text-color;
+    }
 }
 
 .menu__link--text:hover {
@@ -192,13 +192,12 @@
         width: 134px;
         height: 42px;
     }
-}
 
-.menu__link--btn:hover,
-.menu__link--btn:focus {
-    border: 2px solid $button-hover;
+    &:hover,
+    &:focus {
+        border: 2px solid $button-hover;
+    }
 }
-
 
 .info__list {
     display: none;

@@ -28,12 +28,12 @@
         display: inline-flex;
         flex-direction: column;
     }
-}
 
-.footer__wrap:nth-child(2) {
-    @media screen and (min-width: 768px) {
-        justify-content: center;
-        align-items: flex-end;
+    &:nth-child(2) {
+        @media screen and (min-width: 768px) {
+            justify-content: center;
+            align-items: flex-end;
+        }
     }
 }
 

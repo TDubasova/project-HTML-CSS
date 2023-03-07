@@ -141,10 +141,10 @@
     font-size: 14px;
     line-height: 1.76;
     letter-spacing: 0.04em;
-}
 
-.modal-ingredient__ingredient:not(:last-child) {
-    margin-bottom: 11px;
+    &:not(:last-child) {
+        margin-bottom: 11px;
+    }
 }
 
 .modal-ingredient__form {
@@ -158,6 +158,11 @@
     margin-bottom: 16px;
 }
 
+.modal-ingredient__input:placeholder-shown,
+.modal-ingredient__textarea:placeholder-shown {
+    font-size: 14px;
+}
+
 .modal-ingredient__textarea {
     height: 84px;
     margin-bottom: 24px;
@@ -167,7 +172,3 @@
     }
 }
 
-.modal-ingredient__input:placeholder-shown,
-.modal-ingredient__textarea:placeholder-shown {
-    font-size: 14px;
-}
