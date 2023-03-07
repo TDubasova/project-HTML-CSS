@@ -197,7 +197,6 @@
             ./images/points-320@4x.png  1120w,
             ./images/points-1200.png    1200w,
             ./images/points-320@4x.png  1280w,
-            ./images/points-320@4x.png  1280w,
             ./images/points-768@2x.png  1636w,
             ./images/points-1200@2x.png 2400w
           "
@@ -397,6 +396,7 @@
 
       <!-- Gallery -->
       <section class="gallery">
+        <h2 class="title title--hidden">Gallery</h2>
         <div class="conteiner gallery__conteiner">
           <div class="gallery__slideshow">
             <div class="gallery__item gallery__item--01">
@@ -519,9 +519,9 @@
             <li class="contacts__item">
               <p class="contacts__type">CAFE</p>
               <p class="contacts__town">Chicago</p>
-              <adress class="contacts__adress">
+              <p class="contacts__adress">
                 10340 Ridgeland Ave, <br />Chicago Ridge, IL 60415, USA
-              </adress>
+              </p>
               <hr class="contacts__border" />
               <ul class="contacts__timetable">
                 <li class="timetable__item">
@@ -546,9 +546,9 @@
             <li class="contacts__item">
               <p class="contacts__type">FOODTRUCK</p>
               <p class="contacts__town">Los Angeles</p>
-              <adress class="contacts__adress">
+              <p class="contacts__adress">
                 1003 Manhattan Ave, Manhattan Beach, CA 90263, USA
-              </adress>
+              </p>
               <hr class="contacts__border" />
 
               <ul class="contacts__timetable">
@@ -575,9 +575,9 @@
             <li class="contacts__item">
               <p class="contacts__type">CAFE</p>
               <p class="contacts__town">New York</p>
-              <adress class="contacts__adress">
+              <p class="contacts__adress">
                 1726 Sterling Pl, Brooklyn, NY 11222, USA
-              </adress>
+              </p>
               <hr class="contacts__border" />
               <ul class="contacts__timetable">
                 <li class="timetable__item">
@@ -725,7 +725,6 @@
             type="text"
             name="name"
             placeholder="Name"
-            autofocus
           />
           <input
             class="modal__input modal-buyNow__input"
@@ -776,6 +775,7 @@
             "
             sizes="(max-width: 1900px) 132px, 100vw"
             src="./images/modal-ingredients-img-132.png"
+            alt="The hand that holds a waffle cone with chocolate ice cream"
           />
         </div>
         <ul class="modal-ingredient__food-value">
@@ -837,7 +837,6 @@
             type="text"
             name="name"
             placeholder="Name"
-            autofocus
           />
           <input
             class="modal__input modal-ingredient__input"
@@ -919,18 +918,13 @@
           referrerpolicy="no-referrer-when-downgrade"
         >
         </iframe>
-        <button
-          type="button"
-          class="button button--yellow modal-location__button"
-        >
           <a
-            class="modal-location__link"
+            class="button button--yellow modal-location__button modal-location__link"
             href="https://goo.gl/maps/SLTtAhdo5mwzYbb59"
             target="_blank"
-            rel="noopener noreferrer"
-            >Open map</a
-          >
-        </button>
+            rel="noopener noreferrer">
+            Open map
+          </a>
       </div>
     </div>
 
@@ -965,7 +959,6 @@
             type="text"
             name="name"
             placeholder="Name"
-            autofocus
           />
           <input
             class="modal__input modal-franchise__input"

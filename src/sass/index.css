@@ -3233,8 +3233,6 @@ button.swiper-pagination-bullet {
 }
 
 .modal-location__link {
-  display: block;
-  width: 100%;
   color: #131313;
 }
 .modal-location__link:focus {
