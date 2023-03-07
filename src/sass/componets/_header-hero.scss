@@ -290,11 +290,14 @@
 
 .hero__img--points {
     position: absolute;
-    width: 320px;
     height: 49px;
     right: 0;
     bottom: 0;
     pointer-events: none;
+
+    @media screen and (max-width: 479px) {
+       width: 320px;
+    }
 
     @media screen and (min-width: 480px) {
         width: 321px;

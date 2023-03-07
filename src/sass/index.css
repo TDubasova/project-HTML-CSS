@@ -498,11 +498,15 @@ hr {
 
 .hero__img--points {
   position: absolute;
-  width: 320px;
   height: 49px;
   right: 0;
   bottom: 0;
   pointer-events: none;
+}
+@media screen and (max-width: 479px) {
+  .hero__img--points {
+    width: 320px;
+  }
 }
 @media screen and (min-width: 480px) {
   .hero__img--points {
@@ -2245,6 +2249,7 @@ button.swiper-pagination-bullet {
 .contacts__adress {
   display: block;
   box-sizing: border-box;
+  width: 190px;
   height: 40px;
   margin-bottom: 24px;
   font-weight: 500;
@@ -2253,8 +2258,14 @@ button.swiper-pagination-bullet {
   letter-spacing: 0.04em;
   color: rgb(214, 147, 109);
 }
+@media screen and (max-width: 767px) {
+  .contacts__item:nth-child(2) .contacts__adress {
+    width: 212px;
+  }
+}
 @media screen and (min-width: 768px) {
   .contacts__adress {
+    width: 173px;
     height: 71px;
     margin-bottom: 32px;
     font-size: 14px;
@@ -2262,6 +2273,7 @@ button.swiper-pagination-bullet {
 }
 @media screen and (min-width: 1200px) {
   .contacts__adress {
+    width: 288px;
     height: 50px;
     font-size: 16px;
   }
